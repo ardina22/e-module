@@ -12,6 +12,16 @@ export default defineConfigWithVueTs(
   {
     name: 'app/files-to-lint',
     files: ['**/*.{ts,mts,tsx,vue}'],
+    rules: {
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
+        {
+          varsIgnorePattern: '^_', // Ignore variables starting with "_"
+          argsIgnorePattern: '^_', // Ignore parameters starting with "_"
+          caughtErrorsIgnorePattern: '^_', // Optional: ignore caught error params like `catch (_err)`
+        },
+      ],
+    },
   },
 
   globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**']),
