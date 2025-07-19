@@ -9,7 +9,7 @@ import typography from '@tailwindcss/typography'
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   const isProd = mode === 'production'
-  const base = isProd ? `https://ardina22.github.io/e-module` : '/'
+  const base = isProd ? `https://ardina22.github.io/e-module/` : '/'
 
   return {
     base,

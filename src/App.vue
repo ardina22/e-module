@@ -10,17 +10,17 @@ const sidebarOpen = ref(false)
 const moduleTrees = ref<ModuleTree[]>([])
 
 const handleLoadMarkdown = async (file: string) => {
-  const res = await fetch(`/modules/${file}`)
+  const res = await fetch(`${import.meta.env.BASE_URL}modules/${file}`)
   const rawMarkdown = await res.text()
   content.value = await marked(rawMarkdown)
   sidebarOpen.value = false
 }
 
 onMounted(async () => {
-  const indexRes = await fetch('/modules/index.json')
+  const indexRes = await fetch(`${import.meta.env.BASE_URL}modules/index.json`)
   const paths: string[] = await indexRes.json()
 
-  const fullPaths = paths.map((p) => `/modules/${p}`)
+  const fullPaths = paths.map((p) => `${import.meta.env.BASE_URL}modules/${p}`)
   moduleTrees.value = createModuleTrees(paths)
 
   if (fullPaths.length) {
