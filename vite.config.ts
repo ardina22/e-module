@@ -8,12 +8,8 @@ import typography from '@tailwindcss/typography'
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
-  // Read custom CLI argument: --repo=my-repo
-  const repoArg = process.argv.find((arg) => arg.startsWith('--repo='))
-  const repoName = repoArg ? repoArg.split('=')[1] : ''
-
   const isProd = mode === 'production'
-  const base = isProd && repoName ? `https://ardina22.github.io/e-module` : '/'
+  const base = isProd ? `https://ardina22.github.io/e-module` : '/'
 
   return {
     base,
