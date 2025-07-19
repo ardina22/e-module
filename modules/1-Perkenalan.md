@@ -1,3 +1,3 @@
 # Perkenalan
 
-Ini adalah aplikasi E-module yang 
+Ini adalah aplikasi E-module yang anu
