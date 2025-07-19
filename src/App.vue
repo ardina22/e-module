@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import SidebarItem from '@/components/SidebarItem.vue'
-import { createModuleTrees, type ModuleTree } from './module-tree'
+import { createModuleTrees, findLabelByFile, type ModuleTree } from './module-tree'
 import { marked } from 'marked'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
@@ -14,6 +14,11 @@ const handleLoadMarkdown = async (file: string) => {
   const rawMarkdown = await res.text()
   content.value = await marked(rawMarkdown)
   sidebarOpen.value = false
+
+  const label = findLabelByFile(moduleTrees.value, file)
+  if (label) {
+    document.title = `:: E-Module | ${label} ::`
+  }
 }
 
 onMounted(async () => {
@@ -27,6 +32,11 @@ onMounted(async () => {
     const res = await fetch(fullPaths[0])
     const rawMarkdown = await res.text()
     content.value = await marked(rawMarkdown)
+
+    const label = findLabelByFile(moduleTrees.value, paths[0])
+    if (label) {
+      document.title = `:: E-Module | ${label} ::`
+    }
   }
 })
 </script>
@@ -51,7 +61,7 @@ onMounted(async () => {
     >
       <div class="p-4">
         <div class="flex justify-between items-center mb-4">
-          <h2 class="text-2xl font-bold">📚 Docs</h2>
+          <h2 class="text-2xl font-bold">📚 E-Module</h2>
           <x-mark-icon @click="sidebarOpen = false" class="lg:hidden w-6 h-6 text-gray-700" />
         </div>
         <ul class="space-y-1 text-sm">

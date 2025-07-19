@@ -113,3 +113,21 @@ export const createModuleTrees = (paths: string[]): ModuleTree[] => {
   sortTree(root)
   return pruneInternalProps(root.children ?? [])
 }
+
+/**
+ * Recursively finds the label of a given file in a module tree.
+ *
+ * @param tree - The module tree to search.
+ * @param file - The file path to look for (e.g., 'modules/1-intro.md').
+ * @returns The label of the matching node, or null if not found.
+ */
+export const findLabelByFile = (tree: ModuleTree[], file: string): string | null => {
+  for (const node of tree) {
+    if (node.file === file) return node.label
+    if (node.children) {
+      const found = findLabelByFile(node.children, file)
+      if (found) return found
+    }
+  }
+  return null
+}
