@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => {
   const repoName = repoArg ? repoArg.split('=')[1] : ''
 
   const isProd = mode === 'production'
-  const base = isProd && repoName ? `/${repoName}/` : '/'
+  const base = isProd && repoName ? `https://ardina22.github.io/e-module` : '/'
 
   return {
     base,
