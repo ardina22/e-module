@@ -6,6 +6,7 @@ import { marked } from 'marked'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const content = ref('')
+const currentFile = ref('')
 const sidebarOpen = ref(false)
 const moduleTrees = ref<ModuleTree[]>([])
 
@@ -13,6 +14,7 @@ const handleLoadMarkdown = async (file: string) => {
   const res = await fetch(`${import.meta.env.BASE_URL}modules/${file}`)
   const rawMarkdown = await res.text()
   content.value = await marked(rawMarkdown)
+  currentFile.value = file
   sidebarOpen.value = false
 
   const label = findLabelByFile(moduleTrees.value, file)
@@ -27,6 +29,7 @@ onMounted(async () => {
 
   const fullPaths = paths.map((p) => `${import.meta.env.BASE_URL}modules/${p}`)
   moduleTrees.value = createModuleTrees(paths)
+  currentFile.value = paths[0]
 
   if (fullPaths.length) {
     const res = await fetch(fullPaths[0])
@@ -71,6 +74,7 @@ onMounted(async () => {
             :label="module.label"
             :file="module.file"
             :children="module.children"
+            :current-file="currentFile"
             @load-markdown="handleLoadMarkdown"
           />
         </ul>
