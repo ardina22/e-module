@@ -13,7 +13,7 @@ Perangkat bergerak (mobile device)  adalah perangkat yang bisa dibawa kemana-man
 
 ## Macam-Macam Perangkat Bergerak 
 1. Telepon Seluler
-   ![](https://ardina22.github.io/e-module/assets/images/Telepon-Seluler.png)
+   ![](https://ardina22.github.io/e-module/assets/images/Telepon-Seluler-1.png)
    Telepon seluler adalah perangkat telekomunikasi elektronik yang mempunyai kemampuan dasar yang sama dengan telepon konvensioanl saluran tetap, tetapi dapat dibawa kemana-mana yang mana disebut portable atau mobile dan tidak perlu disambungkan menggunakan kabel
 2. PDA (Personal Digital Assistant)
    ![](https://ardina22.github.io/e-module/assets/images/Test.jpeg)
