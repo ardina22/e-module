@@ -76,4 +76,18 @@ export default class StringUtils {
   static toLowerCase(input: string): string {
     return input.replace(/[\s_-]/g, '').toLowerCase()
   }
+
+  /**
+   * Converts a string into a clean, URL-safe slug.
+   * @example " Sejarah Perangkat Bergerak! " => "sejarah-perangkat-bergerak"
+   */
+  static slugify(input: string): string {
+    return input
+      .toLowerCase()
+      .trim()
+      .replace(/[^\w\s-]/g, '') // remove special chars
+      .replace(/\s+/g, '-') // spaces to dashes
+      .replace(/--+/g, '-') // collapse multiple dashes
+      .replace(/^-+|-+$/g, '') // trim leading/trailing dashes
+  }
 }

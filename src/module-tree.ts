@@ -11,6 +11,12 @@ interface InternalModuleTree extends ModuleTree {
   children?: InternalModuleTree[]
 }
 
+export interface MarkdownHeading {
+  id: string
+  text: string
+  level: number
+}
+
 /**
  * Builds a nested tree structure from a flat array of markdown file paths (e.g., from `public/modules/`).
  *
@@ -130,4 +136,43 @@ export const findLabelByFile = (tree: ModuleTree[], file: string): string | null
     }
   }
   return null
+}
+
+/**
+ * Parses rendered Markdown HTML and extracts all `<h1>` to `<h3>` headings.
+ *
+ * Each heading element is assigned an `id` based on its text content (slugified),
+ * allowing anchor links (e.g., from a Table of Contents).
+ *
+ * The function does **not mutate** the original HTML permanently — use returned metadata to inject links if needed.
+ *
+ * @param html - The HTML content rendered from Markdown (e.g., via `marked`)
+ * @returns An array of `MarkdownHeading` objects, each with `id`, `text`, and `level` properties
+ *
+ * @example
+ * ```ts
+ * import { marked } from 'marked'
+ * import { extractHeadingsFromHTML } from './module-tree'
+ *
+ * const html = marked(markdown)
+ * const headings = extractHeadingsFromHTML(html)
+ * // headings = [ { id: 'introduction', text: 'Introduction', level: 1 }, ... ]
+ * ```
+ */
+export function extractHeadingsFromHTML(html: string): MarkdownHeading[] {
+  const container = document.createElement('div')
+  container.innerHTML = html
+
+  const headings: MarkdownHeading[] = []
+
+  container.querySelectorAll('h1, h2, h3').forEach((el) => {
+    const level = parseInt(el.tagName.substring(1))
+    const text = el.textContent?.trim() || ''
+    const id = StringUtils.slugify(text)
+
+    el.id = id
+    headings.push({ id, text, level })
+  })
+
+  return headings
 }

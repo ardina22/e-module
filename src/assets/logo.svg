@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 261.76 226.69"><path d="M161.096.001l-30.225 52.351L100.647.001H-.005l130.877 226.688L261.749.001z" fill="#41b883"/><path d="M161.096.001l-30.225 52.351L100.647.001H52.346l78.526 136.01L209.398.001z" fill="#34495e"/></svg>
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Book 1 -->
+    <rect x="2" y="8" width="18" height="48" rx="2" ry="2" fill="#8e44ad" />
+    <rect x="4" y="10" width="14" height="2" fill="#ecf0f1" />
+    <rect x="4" y="14" width="14" height="2" fill="#ecf0f1" />
+
+    <!-- Book 2 -->
+    <rect x="22" y="8" width="18" height="48" rx="2" ry="2" fill="#27ae60" />
+    <rect x="24" y="10" width="14" height="2" fill="#ecf0f1" />
+    <rect x="24" y="14" width="14" height="2" fill="#ecf0f1" />
+
+    <!-- Book 3 -->
+    <rect x="42" y="8" width="18" height="48" rx="2" ry="2" fill="#e67e22" />
+    <rect x="44" y="10" width="14" height="2" fill="#ecf0f1" />
+    <rect x="44" y="14" width="14" height="2" fill="#ecf0f1" />
+  </g>
+</svg>
