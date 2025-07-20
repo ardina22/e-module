@@ -17,5 +17,8 @@ Perangkat bergerak (mobile device)  adalah perangkat yang bisa dibawa kemana-man
    Telepon seluler adalah perangkat telekomunikasi elektronik yang mempunyai kemampuan dasar yang sama dengan telepon konvensioanl saluran tetap, tetapi dapat dibawa kemana-mana yang mana disebut portable atau mobile dan tidak perlu disambungkan menggunakan kabel
 2. PDA (Personal Digital Assistant)
    ![](https://ardina22.github.io/e-module/assets/images/Test.jpeg)
+   PDA adalah sebuah alat elekteronik yang berbasis komputer dan berbentuk kecil serta dapat dibawa kemana-mana. PDA digunakan untuk pengorganisasian pribadi  dengan fungsi yang jauh lebih terbatas daripada sekadar ponsel pintar tanpa telepon. Biasanya, PDA memiliki kalender, daftar kontak, buku catatan, kalkulator, pembaca email, daftar tugas, dan pelacak pengeluaran (Palm). Dan hanya itu saja. Perbedaan krusialnya adalah tidak ada cara untuk menambahkan aplikasi tambahan—semua yang Anda dapatkan hanya yang ada di dalamnya.
+3. Telepon Pintar / Smartphone
    
-4. 
+5. Tablet
+6. Notebook 
