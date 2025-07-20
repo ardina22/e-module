@@ -7,6 +7,6 @@ Perangkat bergerak merupakan teknologi yang semakin berkembang pesat saat ini. I
 Perangkat bergerak (mobile device)  adalah perangkat yang bisa dibawa kemana-mana. Perangkat tersebut dapat biasanya memiliki ukuran seukuran kantong yang memiliki layar tampilan dengan masukan  sentuhan atau papan ketik mini.
 
 ## Sejarah Perangkat Bergerak 
-[x] 1857-Alexander Graham Bell --> Menemukan telepon dengan kabel pertama kali
-[x] 1983-Martin Cooper --> Menciptakan telepon nirkabel 
-[x] 1997-Philips --> Memperkenalkan smartphone yang menyediakan akses tanpa kabel, internet, email, dan faks
+* 1857-Alexander Graham Bell --> Menemukan telepon dengan kabel pertama kali
+* 1983-Martin Cooper --> Menciptakan telepon nirkabel 
+* 1997-Philips --> Memperkenalkan smartphone yang menyediakan akses tanpa kabel, internet, email, dan faks
