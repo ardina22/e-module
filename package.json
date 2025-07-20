@@ -11,7 +11,7 @@
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
     "format": "prettier --write src/",
-    "deploy": "run-p type-check \"build-only {@ --mode=production}\" && gh-pages -d dist -r https://github.com/ardina22/e-module"
+    "deploy": "run-p type-check \"build-only {@ --mode=production}\" && mv dist/images dist/assets/images && gh-pages -d dist -r https://github.com/ardina22/e-module"
   },
   "dependencies": {
     "@heroicons/vue": "^2.2.0",
