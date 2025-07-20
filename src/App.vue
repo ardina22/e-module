@@ -129,10 +129,9 @@ watch(content, () => {
     <main class="flex flex-1 overflow-y-auto pt-16 lg:pt-6">
       <!-- Markdown content -->
       <div class="markdown prose max-w-none flex-1 px-6 pb-8" v-html="content"></div>
-
-      <!-- Table of Contents -->
-      <toc-sidebar :headings="currentHeadings" :active-id="activeHeading" />
     </main>
+    <!-- Table of Contents -->
+    <toc-sidebar :headings="currentHeadings" :active-id="activeHeading" />
   </div>
 </template>
 
