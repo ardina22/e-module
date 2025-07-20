@@ -10,3 +10,7 @@ Perangkat bergerak (mobile device)  adalah perangkat yang bisa dibawa kemana-man
 * 1857-Alexander Graham Bell --> Menemukan telepon dengan kabel pertama kali
 * 1983-Martin Cooper --> Menciptakan telepon nirkabel 
 * 1997-Philips --> Memperkenalkan smartphone yang menyediakan akses tanpa kabel, internet, email, dan faks
+
+## Macam-Macam Perangkat Bergerak 
+1. Telepon Seluler
+2. 
