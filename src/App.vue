@@ -116,19 +116,26 @@ watch(content, () => {
 <template>
   <div class="flex h-screen overflow-hidden bg-gray-100">
     <!-- Sidebar Toggle Button -->
-    <button @click="sidebarOpen = true"
-      class="lg:hidden fixed top-4 left-4 z-2 bg-white border-0 p-2 rounded-md shadow-md">
+    <button
+      @click="sidebarOpen = true"
+      class="lg:hidden fixed top-4 left-4 z-2 bg-white border-0 p-2 rounded-md shadow-md"
+    >
       <bars3-icon class="w-6 h-6 text-gray-700" />
     </button>
 
     <!-- Sidebar -->
-    <sidebar-module :module-trees="moduleTrees" :current-file="currentFile" :open="sidebarOpen"
-      @close="sidebarOpen = false" @load-markdown="handleLoadMarkdown" />
+    <sidebar-module
+      :module-trees="moduleTrees"
+      :current-file="currentFile"
+      :open="sidebarOpen"
+      @close="sidebarOpen = false"
+      @load-markdown="handleLoadMarkdown"
+    />
 
     <!-- Main content with ToC on the right -->
-    <main class="flex flex-1 overflow-y-auto pt-16 lg:pt-6">
+    <main class="flex flex-1 overflow-y-auto pt-16 lg:pt-6 mb-4">
       <!-- Markdown content -->
-      <div class="markdown prose max-w-none flex-1 px-6 pb-8" v-html="content"></div>
+      <div class="markdown prose max-w-none flex-1 px-6" v-html="content"></div>
     </main>
     <!-- Table of Contents -->
     <toc-sidebar :headings="currentHeadings" :active-id="activeHeading" />
