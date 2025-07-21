@@ -1,4 +1,6 @@
-import { marked, Renderer } from 'marked'
+import { Marked, Renderer } from 'marked'
+import { markedHighlight } from 'marked-highlight'
+import hljs from 'highlight.js'
 import StringUtils from './string-utils'
 
 /**
@@ -16,5 +18,17 @@ export async function renderMarkdown(markdown: string): Promise<string> {
     return `<h${depth} id="${id}" class="scroll-mt-24">${text}</h${depth}>`
   }
 
-  return await marked(markdown, { renderer })
+  const marked = new Marked(
+    markedHighlight({
+      emptyLangClass: 'hljs',
+      langPrefix: 'hljs language-',
+      highlight(code, lang, _info) {
+        console.log(lang)
+        const language = hljs.getLanguage(lang) ? lang : 'plaintext'
+        return hljs.highlight(code, { language }).value
+      },
+    }),
+  )
+
+  return await marked.parse(markdown, { renderer })
 }
