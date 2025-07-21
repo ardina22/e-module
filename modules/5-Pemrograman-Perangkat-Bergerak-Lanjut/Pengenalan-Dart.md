@@ -6,7 +6,7 @@ Di dalam bahasa Pemrograman Berorientasi Objek termasuk Dart, Variabel digunakan
 void main() {
     var nomor = 12;
     print (nomor); 
-    }
+}
 ```
 
 ## Tipe Data Dart
