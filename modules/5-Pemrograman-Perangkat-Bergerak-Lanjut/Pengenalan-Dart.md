@@ -9,17 +9,30 @@ Variabel adalah ruang dalam memori yang menyimpan nilai tipe data dan mempunyai 
 - Tidak boleh dimulai dengan angka.
 
 ### Penulisan Variabel 
-
+#### Keyword Var
 Sebuah variabel harus dideklarasikan sebelum digunakan. Di dalam dart untuk membuat variabel bisa menggunakan berbagai macam deklarasi. 
  Salah satu caranya, Dart menggunakan keyword var untuk mendeklarasikan variabel. Cara penulisan untuk mendeklarasikan variabel adalah seperti yang dicontohkan di bawah ini :
 
 ```dart
 void main() {
-    var nomor = 12;
+    var usia = 17;
     print (nomor); 
 }
 ```
-Semua variabel di dart menyimpan referensi ke nilai, jadi bukan langsung menyimpan nilai variabel tersebut. Variabel bernama “nomor” berisi referensi ke Object integer dengan nilai “12”.
+Semua variabel di dart menyimpan referensi ke nilai, jadi bukan langsung menyimpan nilai variabel tersebut. Variabel bernama “usia” berisi referensi ke Object integer dengan nilai “12”.
+
+#### Type Checking 
+Dart mendukung type-checking (pemeriksaan tipe data) dengan mengawali nama variabel dengan tipe data. Pemeriksaan tipe data memastikan bahwa variabel tersebut hanya menyimpan data khusus untuk tipe data yang dipilih. Berikut contoh penulisan nama variabel yang didahului dengan tipe data.
+
+```dart
+void main() {
+    String nama = 'Dodit';
+    int usia = 17;
+    print (nomor); 
+}
+```
+
+Sehingga apabila nilai yang ditetapkan ke variabel tidak cocok dengan tipe data variabelnya maka akan menampilkan peringatan pesan error.
 
 ## Tipe Data Dart
 -	int (integer)	: bilangan bulat
