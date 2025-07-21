@@ -33,8 +33,17 @@ void main() {
 ```
 
 Sehingga apabila nilai yang ditetapkan ke variabel tidak cocok dengan tipe data variabelnya maka akan menampilkan peringatan pesan error.
+
 *note : Setiap variabel yang sudah dideklarasikan tetapi belum diinisialisasi di Dart maka akan memiliki nilai awal null. Hal ini dikarenakan Dart menganggap semua nilai sebagai Object.*
 
+#### Keyword Dynamic 
+Variabel yang dideklarasikan tanpa tipe data secara implisit akan dideklarasikan sebagai tipe data dynamic. Selain itu, variabel juga dapat dideklarasikan menggunakan kata kunci dynamic sebagai alternatif dari kata kunci var.
+```dart
+void main() {
+    dynamic usia = 17;
+    print (nomor); 
+}
+```
 
 ## Tipe Data Dart
 -	int (integer)	: bilangan bulat
