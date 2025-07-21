@@ -33,6 +33,8 @@ void main() {
 ```
 
 Sehingga apabila nilai yang ditetapkan ke variabel tidak cocok dengan tipe data variabelnya maka akan menampilkan peringatan pesan error.
+*note : Setiap variabel yang sudah dideklarasikan tetapi belum diinisialisasi di Dart maka akan memiliki nilai awal null. Hal ini dikarenakan Dart menganggap semua nilai sebagai Object.*
+
 
 ## Tipe Data Dart
 -	int (integer)	: bilangan bulat
