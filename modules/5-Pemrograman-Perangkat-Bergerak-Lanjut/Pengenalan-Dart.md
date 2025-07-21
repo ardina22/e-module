@@ -1,10 +1,13 @@
 # Bahasa Pemrograman Dart
 ## Variabel Dart
 Di dalam bahasa Pemrograman Berorientasi Objek termasuk Dart, Variabel digunakan untuk menyimpan petunjuk/ alamat/ lokasi/ dari data di dalam memori dan tidak berfungsi menyimpan data 
-> main() {
+
+```dart
+void main() {
     var nomor = 12;
-    print 
+    print (nomor); 
     }
+```
 
 ## Tipe Data Dart
 -	int (integer)	: bilangan bulat
