@@ -18,6 +18,10 @@ export async function renderMarkdown(markdown: string): Promise<string> {
     return `<h${depth} id="${id}" class="scroll-mt-24">${text}</h${depth}>`
   }
 
+  renderer.codespan = ({ text }) => {
+    return `<code class="inline-code not-prose">${text}</code>`
+  }
+
   const marked = new Marked(
     markedHighlight({
       emptyLangClass: 'hljs',
@@ -29,5 +33,7 @@ export async function renderMarkdown(markdown: string): Promise<string> {
     }),
   )
 
-  return await marked.parse(markdown, { renderer })
+  marked.use({ renderer })
+
+  return await marked.parse(markdown)
 }
