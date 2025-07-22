@@ -22,6 +22,12 @@ Fungsi main() adalah fungsi yang telah ditetapkan di Dart. Fungsi ini bertindak 
 8. Buka terminal pada vs code lalu masuk ke folder bin dengan perintah `cd bin` ENTER
 9. Jalankan programnya dengan perintah `dart nama_file` ENTER 
 
+# Assignment
+1. Apakah dart termasuk bahasa pemrograman berorientasi objek?
+2. Apakah persamaan bahasa dart dan java dari segi penulisan syntax?
+3. Diantara java dan dart manakah yang penulisan syntax nya lebih pendek?
+4. Berikan contoh soal nomor 3!
+
 
 
 
