@@ -12,7 +12,8 @@ Memori komputer dapat menampung banyak sekali data, akan tetapi ada tempat khusu
 Semua variable yang menunjukka pada lokasi tersebut atau bisa dikatakan variabel yang menyimpan alamat / lokasi dari NULL akan dianggap tidak memiliki nilai apapun.
  Apa gunanya Variabel Null??
 jika variabel tersebut memang tidak memiliki nilai untuk disimpan 
-Data Siswa	TIPE DATA
-Nama	Ari Wibowo	STRING
-Usia	16	INT
-Ekskul 	Reparasi 	
+|Data | Siswa	| TIPE DATA |
+|-----|-------|-----------|
+|Nama	| Ari |	STRING |
+|Usia |	16 |	INT |
+|Ekskul | 	Reparasi |  | 	
