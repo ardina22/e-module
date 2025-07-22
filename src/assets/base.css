@@ -33,3 +33,36 @@
     @apply bg-[#818b981f];
   }
 }
+
+/* For tables inside markdown */
+.markdown table {
+  @apply table-auto border border-collapse border-gray-400;
+}
+.markdown thead {
+  @apply bg-gray-200;
+}
+.markdown thead th,
+.markdown tbody td {
+  @apply border border-gray-300 px-4 py-2;
+}
+
+/* Make markdown tables rounded */
+.markdown table {
+  @apply border border-gray-300 rounded-lg overflow-hidden;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* Ensure headers and cells align correctly with rounded edges */
+.markdown thead th:first-child {
+  @apply rounded-tl-md;
+}
+.markdown thead th:last-child {
+  @apply rounded-tr-md;
+}
+.markdown tbody tr:last-child td:first-child {
+  @apply rounded-bl-md;
+}
+.markdown tbody tr:last-child td:last-child {
+  @apply rounded-br-md;
+}
