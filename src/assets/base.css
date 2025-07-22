@@ -27,5 +27,5 @@
 
 /* Inline Code */
 .markdown code {
-  @apply text-sm px-1 py-0.5 rounded;
+  @apply bg-[#818b981f] text-sm px-1 py-0.5 rounded;
 }

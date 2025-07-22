@@ -23,7 +23,6 @@ export async function renderMarkdown(markdown: string): Promise<string> {
       emptyLangClass: 'hljs',
       langPrefix: 'hljs language-',
       highlight(code, lang, _info) {
-        console.log(lang)
         const language = hljs.getLanguage(lang) ? lang : 'plaintext'
         return hljs.highlight(code, { language }).value
       },
