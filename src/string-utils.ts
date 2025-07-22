@@ -90,4 +90,18 @@ export default class StringUtils {
       .replace(/--+/g, '-') // collapse multiple dashes
       .replace(/^-+|-+$/g, '') // trim leading/trailing dashes
   }
+
+  /**
+   * Converts a string to normal space-separated words while preserving original casing.
+   * Handles camelCase, PascalCase, kebab-case, and snake_case.
+   * @example "ThisIsAnExample" => "This Is An Example"
+   * @example "this-is-an-example" => "this is an example"
+   */
+  static toNormalCase(input: string): string {
+    return input
+      .replace(/[-_]/g, ' ') // kebab-case or snake_case to space
+      .replace(/([a-z0-9])([A-Z])/g, '$1 $2') // camelCase or PascalCase to space
+      .replace(/\s+/g, ' ') // collapse multiple spaces
+      .trim()
+  }
 }

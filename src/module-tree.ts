@@ -62,7 +62,7 @@ export interface MarkdownHeading {
  */
 export const createModuleTrees = (paths: string[]): ModuleTree[] => {
   const formatLabel = (name: string): string => {
-    return StringUtils.toTitleCase(name.replace(/^\d+-/, '').replace(/\.md$/, ''))
+    return StringUtils.toNormalCase(name.replace(/^\d+-/, '').replace(/\.md$/, ''))
   }
 
   const extractOrder = (raw: string = ''): number => {
