@@ -1,4 +1,13 @@
 # Bahasa Pemrograman Dart
+
+## Script Utama Dart
+```dart
+void main(){
+   print("Hello World");
+}
+```
+Fungsi main() adalah fungsi yang telah ditetapkan di Dart. Fungsi ini bertindak sebagai awal titik masuk ke aplikasi. Script Dart membutuhkan fungsi main() untuk dijalankan. Fungsi print() adalah fungsi yang mencetak string atau nilai yang ditentukan ke keluaran standar yaitu terminal/console.
+
 ## Variabel Dart
 Di dalam bahasa Pemrograman Berorientasi Objek termasuk Dart, Variabel digunakan untuk menyimpan petunjuk/ alamat/ lokasi/ dari data di dalam memori dan tidak berfungsi menyimpan data 
 
