@@ -16,10 +16,10 @@ Sebuah variabel harus dideklarasikan sebelum digunakan. Di dalam dart untuk memb
 ```dart
 void main() {
     var usia = 17;
-    print (nomor); 
+    print (usia); 
 }
 ```
-Semua variabel di dart menyimpan referensi ke nilai, jadi bukan langsung menyimpan nilai variabel tersebut. Variabel bernama “usia” berisi referensi ke Object integer dengan nilai “12”.
+Semua variabel di dart menyimpan referensi ke nilai, jadi bukan langsung menyimpan nilai variabel tersebut. Variabel bernama “usia” berisi referensi ke Object integer dengan nilai “17”.
 
 #### Type Checking 
 Dart mendukung type-checking (pemeriksaan tipe data) dengan mengawali nama variabel dengan tipe data. Pemeriksaan tipe data memastikan bahwa variabel tersebut hanya menyimpan data khusus untuk tipe data yang dipilih. Berikut contoh penulisan nama variabel yang didahului dengan tipe data.
@@ -28,7 +28,7 @@ Dart mendukung type-checking (pemeriksaan tipe data) dengan mengawali nama varia
 void main() {
     String nama = 'Dodit';
     int usia = 17;
-    print (nomor); 
+    print (nama); 
 }
 ```
 
@@ -41,7 +41,7 @@ Variabel yang dideklarasikan tanpa tipe data secara implisit akan dideklarasikan
 ```dart
 void main() {
     dynamic usia = 17;
-    print (nomor); 
+    print (usia); 
 }
 ```
 ### Keyword Final dan Const
@@ -63,9 +63,9 @@ void main() {
 -	double 		: bilangan desimal
 -	string		: kumpulan karakter dg ‘ ‘, “ “
 -	bool (Boolean)	: memiliki 2 nilai false true
--	list
--	map
--	record
+-	list : identik dengan konsep array dalam bahasa pemrograman lain.Dengan memakai library dart : core memungkinkan pembuatan dan manipulasi tipe data ini melalui class List 
+-	map : mewakili sekumpulan nilai sebagai pasangan key-value. Dengan memakai library dart : core memungkinkan pembuatan dan manipulasi tipe data ini melalui class List 
+
   
 ## Null & Nullabel Types
 Memori komputer dapat menampung banyak sekali data, akan tetapi ada tempat khusus di dalam memori yang tidak akan pernah diisi oleh data apapun yang disebut NULL 
