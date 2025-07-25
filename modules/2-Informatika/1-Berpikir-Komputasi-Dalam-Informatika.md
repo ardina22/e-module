@@ -51,9 +51,9 @@ Menurut Donald E. Knuth ciri-ciri algoritma yaitu:
 ### Natural Language 
 Dalam metode ini, tidak ada standar baku yang menentukan struktur dan susunan penulisan algoritma. Metode ini menyesuaikan bahasan pemnbuatnya.
 Pada Metode ini meemiliki 3 bagian penting, yaitu:
-a. Header
-b. Deklarasi
-c. Badan Algoritma
+- Header
+- Deklarasi
+- Badan Algoritma
 
 ### Pseudocode
 
