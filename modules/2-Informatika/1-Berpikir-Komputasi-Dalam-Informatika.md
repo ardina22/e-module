@@ -12,9 +12,29 @@ Berpikir Komputasional adalah metode universal untuk memecah masalah kompleks me
    - Contoh dalam IT:
      Dalam pengembangan aplikasi e-commerce, dekomposisi melibatkan pemisahan menjadi modul-modul seperti pembayaran, manajemen stok, dan antarmuka pengguna.
      
-3) ABSTRACTION  (Abstraksi)
-4) PATTERN RECOGNITION (Pengenalan Pola)
-5) ALGORITHM DESIGN (Desain Algoritma)
+2) ABSTRACTION  (Abstraksi)
+   Berkonsentrasi pada informasi yang relevan dan penting serta mengabaikan detail yang tidak perlu. Membuat skala prioritas 
+   - Contoh kehidupan sehari-hari:
+     Ketika Anda menceritakan pengalaman libur sekolah, maka kalian hanya akan menceritakan kejadian-kejadian pentingnya saja kepada teman
+   - Contoh dalam IT:
+     membuat model data database yang menyederhanakan entitas seperti pengguna dan produk.
+     
+3) PATTERN RECOGNITION (Pengenalan Pola)
+   Mengidentifikasi kesamaan atau tren yang berulang dalam data atau masalah.
+   - Contoh kehidupan sehari-hari:
+     Ketika seorang anak diberi tugas melipat pakaian, maka dia pastinya akan memilah-milah tumpukan baju sesuai pemiliknya. baju ibu dijadikan satu tumpukan dengan baju ibu dan tidak akan dicampur dengan baju nya sendiri atau bajunya adiknya. 
+   - Contoh dalam IT:
+     Contoh nyata adalah deteksi penipuan kartu kredit melalui pola transaksi yang aneh.
+
+4) ALGORITHM DESIGN (Desain Algoritma)
+   Membuat serangkaian langkah-langkah yang jelas dan sistematis untuk mencapai solusi.
+      - Contoh kehidupan sehari-hari:
+        Ketika kalian menuliskan daftar belanjaan untuk belanja di supermaerket, maka ketika sampai kalian seharusnya mulai mengambil barang yang terdekat dengan pintu masuk hingga terakhir mengambil barang yang terdekat dengan kasir
+   - Contoh dalam IT:
+    Contoh aplikasinya adalah algoritma pencarian rute terpendek yang digunakan di Google Maps.
+
+
+
    
 
 
