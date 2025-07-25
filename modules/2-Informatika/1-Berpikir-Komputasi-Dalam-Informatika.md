@@ -39,6 +39,15 @@ Berpikir Komputasional adalah metode universal untuk memecah masalah kompleks me
 - Asal kata : "algorism" yang artinya cara membuat metode penyelesaian masalah secara logis, runtut, dan sistematis dalam waktu secepat mungkin
 > Algortima adalah serangkaian proses atau aturan yang disusun dan diurutkan secara sistematis dan logis untuk menyelesaikan permasalahan
 
+## Ciri-Ciri Algoritma 
+Menurut Donald E. Knuth ciri-ciri algoritma yaitu:
+1. Input : Permasalahan yang dihadapi dan akan dicari solusinya. Algoritma memiliki 0 atau lebih inputan
+2. Proses : langkah-langkah yang harus dilakukan untuk mencapai tujuan akhir
+3. Output : Solusi / tampilan akhir yang didapatkan dari suatu algortima, minimal memiliki 1 output
+4. Instruksi : perintah yang jelas dan tidak ambigu sehingga tidak terjadi kesalahan dalam menghasilkan output
+5. Tujuan Akhir : Akhir dari program dimana program akan berhenti ketika tujuan akhir telah tercapai
+   
+
 
 
 
