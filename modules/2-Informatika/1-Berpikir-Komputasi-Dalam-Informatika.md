@@ -46,7 +46,18 @@ Menurut Donald E. Knuth ciri-ciri algoritma yaitu:
 3. Output : Solusi / tampilan akhir yang didapatkan dari suatu algortima, minimal memiliki 1 output
 4. Instruksi : perintah yang jelas dan tidak ambigu sehingga tidak terjadi kesalahan dalam menghasilkan output
 5. Tujuan Akhir : Akhir dari program dimana program akan berhenti ketika tujuan akhir telah tercapai
-   
+
+## Metode Penulisan Algoritma
+### Natural Language 
+Dalam metode ini, tidak ada standar baku yang menentukan struktur dan susunan penulisan algoritma. Metode ini menyesuaikan bahasan pemnbuatnya.
+Pada Metode ini meemiliki 3 bagian penting, yaitu:
+a. Header
+b. Deklarasi
+c. Badan Algoritma
+
+### Pseudocode
+
+### Flowchart
 
 
 
