@@ -50,7 +50,7 @@ Menurut Donald E. Knuth ciri-ciri algoritma yaitu:
 ## Metode Penulisan Algoritma
 ### Natural Language 
 Metoce ini menggunakan bahasa manusia, tidak ada standar baku yang menentukan struktur dan susunan penulisan algoritma. Metode ini menyesuaikan bahasan pemnbuatnya.
-- contoh: Algoritma mencari Luas Persegi Panjang
+- contoh: Natural Language mencari Luas Persegi Panjang
 ``` java
 1. Masukkan nilai panjang 
 2. Masukkan nilai lebar 
@@ -60,8 +60,8 @@ Metoce ini menggunakan bahasa manusia, tidak ada standar baku yang menentukan st
 
 ### Pseudocode
 Psedocode lebih mirip dengan struktur bahasa pemrograman tertentu, tetapi tidak merepresentasikan standart pennulisan source code
-- contoh: Algoritma mencari Luas Persegi Panjang
-Berikut adalahb psedocode yang mirip dengan bahasa PASCAL
+- contoh: psedocode mencari Luas Persegi Panjang
+Berikut adalah psedocode yang mirip dengan bahasa PASCAL
 ``` pascal
 1. Start
 2. READ panjang, lebar 
@@ -73,6 +73,8 @@ Berikut adalahb psedocode yang mirip dengan bahasa PASCAL
 Metode penulisan flowchart digambar dengan runtut menggunakan susunan bagan alir dengan model atau bentuk yang telah disesuaikan penggunaan dan fungsinya.
 - ![](https://ardina22.github.io/e-module/assets/images/flow1.png)
 - ![](https://ardina22.github.io/e-module/assets/images/flow2.png)
+- contoh: Flowchart mencari Luas Persegi Panjang
+- 
 
 ## Logika Matematika
 ## Logika Konversi Bilangan
