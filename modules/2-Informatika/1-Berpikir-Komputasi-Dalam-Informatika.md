@@ -57,6 +57,10 @@ Metoce ini menggunakan bahasa manusia, tidak ada standar baku yang menentukan st
 |3. Hitung Luas |
 |4. Tampilkan Hasil|
 
+|1. Masukkan nilai panjang  | Siswa	| TIPE DATA |
+|-----|-------|-----------|
+|2. Masukkan nilai lebar	| Ari |	String |
+|3. Hitung Luas | 	Reparasi | String? | 	
 
 ### Pseudocode
 
