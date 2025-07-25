@@ -67,9 +67,11 @@ Berikut adalahb psedocode yang mirip dengan bahasa PASCAL
 2. READ panjang, lebar 
 3. luas = panjang * lebar
 4. PRINT luas
-5. STOP
+5. Stop
 ```
 ### Flowchart
+Metode penulisan flowchart digambar dengan runtut menggunakan susunan bagan alir dengan model atau bentuk yang telah disesuaikan penggunaan dan fungsinya.
+
 
 ## Logika Matematika
 ## Logika Konversi Bilangan
