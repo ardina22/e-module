@@ -74,7 +74,7 @@ Metode penulisan flowchart digambar dengan runtut menggunakan susunan bagan alir
 - ![](https://ardina22.github.io/e-module/assets/images/flow1.png)
 - ![](https://ardina22.github.io/e-module/assets/images/flow2.png)
 - contoh: Flowchart mencari Luas Persegi Panjang
-- 
+- ![](https://ardina22.github.io/e-module/assets/images/Flowchart.png)
 
 ## Logika Matematika
 ## Logika Konversi Bilangan
