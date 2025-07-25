@@ -51,10 +51,11 @@ Menurut Donald E. Knuth ciri-ciri algoritma yaitu:
 ### Natural Language 
 Metoce ini menggunakan bahasa manusia, tidak ada standar baku yang menentukan struktur dan susunan penulisan algoritma. Metode ini menyesuaikan bahasan pemnbuatnya.
 - contoh: Algoritma mencari Luas Persegi Panjang
-> "1. Masukkan nilai panjang 
+```1. Masukkan nilai panjang 
 2. Masukkan nilai lebar 
 3. Hitung Luas 
-4. Tampilkan Hasil"
+4. Tampilkan Hasil
+```
 
 
 ### Pseudocode
