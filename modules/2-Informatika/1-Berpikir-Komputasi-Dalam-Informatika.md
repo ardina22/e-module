@@ -34,6 +34,14 @@ Berpikir Komputasional adalah metode universal untuk memecah masalah kompleks me
     Contoh aplikasinya adalah algoritma pencarian rute terpendek yang digunakan di Google Maps.
 
 
+#  Algoritma
+## Konsep Algortima
+- Asal kata : "algorism" yang artinya cara membuat metode penyelesaian masalah secara logis, runtut, dan sistematis dalam waktu secepat mungkin
+> Algortima adalah serangkaian proses atau aturan yang disusun dan diurutkan secara sistematis dan logis untuk menyelesaikan permasalahan
+
+
+
+
 
    
 
