@@ -1,4 +1,4 @@
-<img width="1488" height="76" alt="image" src="https://github.com/user-attachments/assets/05291cba-4ed1-4025-9b13-014fa89cf432" /># Berpikir Komputasional
+# Berpikir Komputasional 
 
 ## Apa itu Berpikir Komputasional?
 Berpikir komputasional (BK) mengasah keterampilan problem solving sebagai landasan untuk menghasilkan solusi yang efektif, efisien dan optimal dengan menerapkan penalaran kritis, kreatif dan mandiri.
