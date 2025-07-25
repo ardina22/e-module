@@ -58,9 +58,17 @@ Metoce ini menggunakan bahasa manusia, tidak ada standar baku yang menentukan st
 4. Tampilkan Hasil
 ```
 
-
 ### Pseudocode
-
+Psedocode lebih mirip dengan struktur bahasa pemrograman tertentu, tetapi tidak merepresentasikan standart pennulisan source code
+- contoh: Algoritma mencari Luas Persegi Panjang
+Berikut adalahb psedocode yang mirip dengan bahasa PASCAL
+``` pascal
+1. Start
+2. READ panjang, lebar 
+3. luas = panjang * lebar
+4. PRINT luas
+5. STOP
+```
 ### Flowchart
 
 ## Logika Matematika
