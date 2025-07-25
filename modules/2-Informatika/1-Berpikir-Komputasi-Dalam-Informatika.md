@@ -71,8 +71,8 @@ Berikut adalahb psedocode yang mirip dengan bahasa PASCAL
 ```
 ### Flowchart
 Metode penulisan flowchart digambar dengan runtut menggunakan susunan bagan alir dengan model atau bentuk yang telah disesuaikan penggunaan dan fungsinya.
-![](https://ardina22.github.io/e-module/assets/images/flow1.png)
-![](https://ardina22.github.io/e-module/assets/images/flow2.png)
+- ![](https://ardina22.github.io/e-module/assets/images/flow1.png)
+- ![](https://ardina22.github.io/e-module/assets/images/flow2.png)
 
 ## Logika Matematika
 ## Logika Konversi Bilangan
