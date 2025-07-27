@@ -20,7 +20,7 @@ String kelas = 'XII RPL';
 |TUGAS | KETERANGAN |
 |------|------------|
 |1.| Bagaimana cara menggabungkan 2 string? |
-|2.| implementasikan dalam coding sehingga contoh code penggunaan string di atas bisa menghasilkan output > Roni SAputra, XII RPL |
+|2.| implementasikan dalam coding sehingga contoh code penggunaan string di atas bisa menghasilkan output ( Roni SAputra, XII RPL  ) dalam satu baris |
 
 
 -	bool (Boolean)	: memiliki 2 nilai false true
