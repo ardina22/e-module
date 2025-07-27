@@ -67,12 +67,27 @@ Contoh penggunaan keyword Const:
 
 ```dart
 void main() {
-    const double phi = 3.14;
-    const luas = phi * 14 * 14;
-    print ("Luas lingkaran ${luas}"); 
+  const phi = 3.14;
+  var luas = phi * 14 * 14;
+  print("Luas Lingkaran:");
+  print(luas);
 }
 ```
 
-# Assignment
-1. Perhatikan contoh penggunaan keyword Var pada materi di atas. Gantilah nilai pada variabel usia yang sebelumnya 17 menjadi 18 tanpa menghapus varibael usia yang sudah dideklarasikan sebelumnya
-2.  
+### Keyword Late 
+Late digunakan jika ingin membuat variabel yang dideklarasinya apabila nanti ketika variabel ingin diakses
+Contoh penggunaan keyword Late:
+```dart
+String tampilkanData() {
+  print("Roni Saputra");
+  return "Kelas XII RPL";
+}
+
+void main() {
+  late var hasil = tampilkanData();
+  print("Data siswa SMK BP Subulul Huda");
+  print(hasil);
+}
+```
+
+
