@@ -5,6 +5,7 @@ Variabel adalah ruang dalam memori yang menyimpan nilai tipe data dan mempunyai 
 
 ## Aturan Penamaan Variabel
 Berikut ini adalah aturan penamaan untuk variabel :
+- Menggunakan gaya penulisan camelCase 
 - Tidak boleh berupa kata kunci.
 - Dapat berisi huruf dan angka.
 - Tidak boleh berisi spasi dan karakter khusus, kecuali garis bawah (_) dan tanda dolar ($).
@@ -21,6 +22,9 @@ void main() {
 }
 ```
 Semua variabel di dart menyimpan referensi ke nilai, jadi bukan langsung menyimpan nilai variabel tersebut. Variabel bernama “usia” berisi referensi ke Object integer dengan nilai “17”.
+
+> LATIHAN
+> Perhatikan contoh penggunaan keyword Var pada materi di atas. Gantilah nilai pada variabel usia yang sebelumnya 17 menjadi 18 tanpa menghapus varibael usia yang sudah dideklarasikan sebelumnya
 
 #### Type Checking 
 Dart mendukung type-checking (pemeriksaan tipe data) dengan mengawali nama variabel dengan tipe data. Pemeriksaan tipe data memastikan bahwa variabel tersebut hanya menyimpan data khusus untuk tipe data yang dipilih. Berikut contoh penulisan nama variabel yang didahului dengan tipe data.
@@ -59,3 +63,7 @@ void main() {
     print ("Luas lingkaran ${luas}"); 
 }
 ```
+
+# Assignment
+1. Perhatikan contoh penggunaan keyword Var pada materi di atas. Gantilah nilai pada variabel usia yang sebelumnya 17 menjadi 18 tanpa menghapus varibael usia yang sudah dideklarasikan sebelumnya
+2.  
