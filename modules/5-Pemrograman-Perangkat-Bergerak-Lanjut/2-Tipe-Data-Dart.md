@@ -1,7 +1,36 @@
 # Tipe Data Dart
 -	int (integer)	: bilangan bulat
+  ```dart
+   int usia = 17;
+```
 -	double 		: bilangan desimal
+  ```dart
+  > double tinggiBadan = 182.5;
+```
+-	num       : bisa menerima nilai int dan double
+  ```dart
+  num tinggiBadan = 182.5;
+num usia = 17;
+````
 -	string		: kumpulan karakter dg ‘ ‘, “ “
+  ```dart
+String nama = "Roni Saputra, ";
+String kelas = 'XII RPL';
+```
+Menggabungkan 2 buah string
+```dart
+var data = nama + kelas;
+  print(data);
+```
+String Interpolation --> expression (memanggil variabel ke dalam string)
+```dart
+  String data = "$nama ${kelas}";
+  print(data);
+```
+
+
+
+
 -	bool (Boolean)	: memiliki 2 nilai false true
 -	list : identik dengan konsep array dalam bahasa pemrograman lain.Dengan memakai library dart : core memungkinkan pembuatan dan manipulasi tipe data ini melalui class List 
 -	map : mewakili sekumpulan nilai sebagai pasangan key-value. Dengan memakai library dart : core memungkinkan pembuatan dan manipulasi tipe data ini melalui class List 
@@ -33,3 +62,7 @@ void main() {
   print(ekskul);
 }
 ```
+
+#Assignment
+1. Buatlah nilai dari variabel nama dan kelas digabung menjadi satu, serta ketika ditampilkan nilai dari variabel kelas mengandung huruf kecil semua tanpa mengubah inisialisai nilai awal.
+   OUTPUT : Roni Saputra, xii rpl
