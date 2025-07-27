@@ -17,6 +17,10 @@ num usia = 17;
 String nama1 = 'Roni';
 String nama2 = "Saputra";
 ```
+|TUGAS | KETERANGAN |
+|------|------------|
+|1.| Bagaimana cara menggabungkan 2 string|
+
 -	bool (Boolean)	: memiliki 2 nilai false true
 -	list : identik dengan konsep array dalam bahasa pemrograman lain.Dengan memakai library dart : core memungkinkan pembuatan dan manipulasi tipe data ini melalui class List 
 -	map : mewakili sekumpulan nilai sebagai pasangan key-value. Dengan memakai library dart : core memungkinkan pembuatan dan manipulasi tipe data ini melalui class List 
