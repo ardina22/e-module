@@ -23,7 +23,8 @@ void main() {
 ```
 Semua variabel di dart menyimpan referensi ke nilai, jadi bukan langsung menyimpan nilai variabel tersebut. Variabel bernama “usia” berisi referensi ke Object integer dengan nilai “17”.
 
-> LATIHAN
+> LATIHAN :
+> 
 > Perhatikan contoh penggunaan keyword Var pada materi di atas. Gantilah nilai pada variabel usia yang sebelumnya 17 menjadi 18 tanpa menghapus varibael usia yang sudah dideklarasikan sebelumnya
 
 #### Type Checking 
