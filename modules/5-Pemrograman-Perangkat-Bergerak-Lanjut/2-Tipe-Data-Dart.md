@@ -37,6 +37,17 @@ var data = nama + kelas;
   String data = "$nama ${kelas}";
   print(data);
 ```
+
+- String Multiline --> string yang panjangnya lebih dari satu baris, diapit menggunakan tiga tanda petik
+```dart
+String keterangan = '''
+jika string sangat panjang dan tidak bisa dituliskan 
+dalam satu baris maka harus menggunakan multiline string
+dengan diapit kutip tiga
+''';
+print(keterangan);
+```
+    
 ### bool (Boolean)	
 boolean memiliki 2 nilai yaitu false true
 
