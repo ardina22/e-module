@@ -12,8 +12,11 @@
   num tinggiBadan = 182.5;
 num usia = 17;
 ````
-
 -	string		: kumpulan karakter dg ‘ ‘, “ “
+  ```dart
+String nama1 = 'Roni';
+String nama2 = "Saputra";
+```
 -	bool (Boolean)	: memiliki 2 nilai false true
 -	list : identik dengan konsep array dalam bahasa pemrograman lain.Dengan memakai library dart : core memungkinkan pembuatan dan manipulasi tipe data ini melalui class List 
 -	map : mewakili sekumpulan nilai sebagai pasangan key-value. Dengan memakai library dart : core memungkinkan pembuatan dan manipulasi tipe data ini melalui class List 
