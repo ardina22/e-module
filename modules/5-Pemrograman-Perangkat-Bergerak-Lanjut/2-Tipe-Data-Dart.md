@@ -65,7 +65,22 @@ List merupakan tipe data array yang berisi kumpulan data. Saat membuat list kita
   print(siswa);
   print(kelas);
 ```
-
+- Menambahkan data ke dalam List
+```dart
+siswa.add("Puji");
+```
+- Mengambil data di dalam list
+```dart
+ print(siswa[1]);
+```
+- Mengubah data di dalam list
+```dart
+  siswa[0] = 'Satria';
+```
+- Menghapus data di dalam list
+```dart
+siswa.removeAt(3);
+```
 ### map : 
 Map adalah tipe data key-value.
 Tipe data ini mirip dengan tipe data list, namun perbedaannya adalah jika list index dibuat secara otomatis, nilainya berupa int autoincrement yang dimulai dari nol, sedangkan map index harus dibuat sendiri dengan tipe data apapun.
