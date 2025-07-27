@@ -1,15 +1,15 @@
 # Bahasa Pemrograman Dart
-Dart merupakan bahasa pemrograman yang dibuat oleh Google yang bersifat cross-platform. Dart digunakan untuk mengembangkan aplikasi berbasis web dan mobile. Kalian dapat menggunakan framework Flutter untuk mengembangkan aplikasi mobile yang dapat dijalankan pada perangkat Android maupun iOS. 
+Dart merupakan bahasa pemrograman yang dibuat oleh Google (2011)  yang bersifat cross-platform. Dart digunakan untuk mengembangkan aplikasi berbasis web dan mobile. Kalian dapat menggunakan framework Flutter untuk mengembangkan aplikasi mobile yang dapat dijalankan pada perangkat Android maupun iOS. 
 
 Berikut ini syntax dasar Dart untuk menampilkan teks "Hai, Santri" pada layar
 
 ## Script Utama Dart
 ```dart
 void main(){
-   print("Hai, Santri");
+   print("Hello World ");
 }
 ```
-Fungsi main() adalah fungsi yang telah ditetapkan di Dart. Fungsi ini bertindak sebagai awal titik masuk ke aplikasi. Script Dart membutuhkan fungsi main() untuk dijalankan. Fungsi print() adalah fungsi yang mencetak string atau nilai yang ditentukan ke keluaran standar yaitu terminal/console.
+Fungsi main() adalah function yang telah ditetapkan di Dart. Function ini bertindak sebagai awal titik masuk ke aplikasi. Script Dart membutuhkan function main() untuk dijalankan. Function print() adalah fungsi yang mencetak string atau nilai yang ditentukan ke keluaran standar yaitu terminal/console.
 
 # Memulai Pemrograman Dart
 1. Buka Visual Studio Code
@@ -20,13 +20,15 @@ Fungsi main() adalah fungsi yang telah ditetapkan di Dart. Fungsi ini bertindak 
 6. kemudian buat file baru dengan nama "namaAnda_coba_dart" lalu ENTER dan tunggu vs code men-generate file-file yang kita butuhkan
 7. Buka file yang sudah kalian buat tadi di dalam folder bin
 8. Buka terminal pada vs code lalu masuk ke folder bin dengan perintah `cd bin` ENTER
-9. Jalankan programnya dengan perintah `dart nama_file` ENTER 
+9. Jalankan programnya dengan perintah `dart nama_file` ENTER
+
+
+> Folder bin --> berisi program utama aplikasi yang kita buat, Sehingga apabila ingin menambahkan atau membuat file baru maka simpanlah di dalam folder bin.
+> Pada bahasa dart setiap akhir statement harus diakhiri dengan tanda titi koma (;)
+
 
 # Assignment
-1. Apakah dart termasuk bahasa pemrograman berorientasi objek?
-2. Apakah persamaan bahasa dart dan java dari segi penulisan syntax?
-3. Diantara java dan dart manakah yang penulisan syntax nya lebih pendek?
-4. Berikan contoh soal nomor 3!
+1. Buatlah file baru 
 
 
 
