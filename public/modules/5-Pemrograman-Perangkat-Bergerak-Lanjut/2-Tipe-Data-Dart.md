@@ -5,6 +5,7 @@
   > double tinggiBadan = 182.5;
 -	num       : bisa menerima nilai int dan double
   > num tinggiBadan = 182.5;
+
 > num usia = 17;
 
 -	string		: kumpulan karakter dg ‘ ‘, “ “
