@@ -58,10 +58,22 @@ bool nilaiAngka = true;
 ```
 
 ### list 
-identik dengan konsep array dalam bahasa pemrograman lain.Dengan memakai library dart : core memungkinkan pembuatan dan manipulasi tipe data ini melalui class List 
+List merupakan tipe data array yang berisi kumpulan data. Saat membuat list kita perlu menentukan isi dari tipe data listnya.
+```data
+  List<String> siswa = ['Roni', 'Putra', 'Sri'];
+  List<int> kelas = [10, 11, 12];
+  print(siswa);
+  print(kelas);
+```
 
-### map : mewakili sekumpulan nilai sebagai pasangan key-value. Dengan memakai library dart : core memungkinkan pembuatan dan manipulasi tipe data ini melalui class List 
-
+### map : 
+Map adalah tipe data key-value.
+Tipe data ini mirip dengan tipe data list, namun perbedaannya adalah jika list index dibuat secara otomatis, nilainya berupa int autoincrement yang dimulai dari nol, sedangkan map index harus dibuat sendiri dengan tipe data apapun.
+```dart
+  Map<String, int> siswa = {'Roni': 10, 'Putra': 11, 'Sri': 12};
+  print(siswa);
+  print(siswa['Putra']);
+```
   
 # Null & Nullabel Types
 Syntax:
