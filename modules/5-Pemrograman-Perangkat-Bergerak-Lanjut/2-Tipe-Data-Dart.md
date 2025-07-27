@@ -1,22 +1,26 @@
 # Tipe Data Dart
 
-###	int (integer)	: bilangan bulat
+###	int (integer)
+integer merupakan tipe data bilangan bulat
 ```dart
    int usia = 17;
 ```
 
-### double 		: bilangan desimal
+### double 		
+double merupakan tipe data bilangan desimal
 ```dart
   double tinggiBadan = 182.5;
 ```
 
-### num       : bisa menerima nilai int dan double
+### num       
+num merupakan tipe data yang bisa menerima nilai integer dan double
 ```dart
 num tinggiBadan = 182.5;
 num usia = 17;
 ```
 
-### string		: berisi kumpulan karakter dengan diapit petik dua atau petik satu.
+### string		
+String merupakan tipe data yang berisi kumpulan karakter dengan diapit petik dua atau petik satu.
 ```dart
 String nama = "Roni Saputra, ";
 String kelas = 'XII RPL';
