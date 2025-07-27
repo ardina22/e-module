@@ -51,10 +51,18 @@ void main() {
 }
 ```
 
-### Keyword Final dan Const
-Keyword final dan const digunakan untuk mendeklarasikan nilai variabel yang tetap atau konstan di Dart. Jika sebuah variabel dideklarasikan menggunakan keyword final atau const, maka nilainya tidak dapat diubah setelah dideklarasikan. Kedua keyword ini bisa digunakan bersamaan dengan tipe data variabel atau sebagai pengganti kata kunci var.
-- Keyword const :  merepresentasikan nilai konstan pada waktu kompilasi, sehingga nilai variabel const tidak dapat diubah setelah dideklarasikan.
+### Keyword Final
+Final digunakan untuk mendeklarasikan nilai variabel yang tidak bisa dideklarsikan ulang tetapi nilai dari variabelnya bisa diubah.
+Contoh penggunaan keyword Final:
+```dart
+void main() {
+  final time = DateTime.now();
+  print(time);
+}
+```
 
+### Keyword Const
+const digunakan untuk mendeklarasikan nilai variabel yang tidak bisa dideklarsikan ulang dan nilai dari variabelnya tidak bisa diubah.
 Contoh penggunaan keyword Const:
 
 ```dart
