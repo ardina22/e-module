@@ -50,6 +50,12 @@ print(keterangan);
     
 ### bool (Boolean)	
 boolean memiliki 2 nilai yaitu false true
+```dart
+bool nilaiAngka = true;
+  bool nilaiHuruf = false;
+  print(nilaiAngka);
+  print(nilaiHuruf);
+```
 
 ### list 
 identik dengan konsep array dalam bahasa pemrograman lain.Dengan memakai library dart : core memungkinkan pembuatan dan manipulasi tipe data ini melalui class List 
