@@ -1,6 +1,11 @@
 # Tipe Data Dart
 -	int (integer)	: bilangan bulat
+  > int usia = 17;
 -	double 		: bilangan desimal
+  > double tinggiBadan = 182.5;
+-	num       : bisa menerima nilai int dan double
+  > num tinggiBadan = 182.5;
+
 -	string		: kumpulan karakter dg ‘ ‘, “ “
 -	bool (Boolean)	: memiliki 2 nilai false true
 -	list : identik dengan konsep array dalam bahasa pemrograman lain.Dengan memakai library dart : core memungkinkan pembuatan dan manipulasi tipe data ini melalui class List 
