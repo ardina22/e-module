@@ -1,6 +1,6 @@
 # Tipe Data Dart
 
-###	int (integer)
+###	Int (integer)
 integer merupakan tipe data bilangan bulat
 ```dart
    int usia = 17;
@@ -19,7 +19,7 @@ num tinggiBadan = 182.5;
 num usia = 17;
 ```
 
-### string		
+### String		
 String merupakan tipe data yang berisi kumpulan karakter dengan diapit petik dua atau petik satu.
 ```dart
 String nama = "Roni Saputra, ";
@@ -37,13 +37,13 @@ var data = nama + kelas;
   String data = "$nama ${kelas}";
   print(data);
 ```
+### bool (Boolean)	
+boolean memiliki 2 nilai yaitu false true
 
+### list 
+identik dengan konsep array dalam bahasa pemrograman lain.Dengan memakai library dart : core memungkinkan pembuatan dan manipulasi tipe data ini melalui class List 
 
-
-
--	bool (Boolean)	: memiliki 2 nilai false true
--	list : identik dengan konsep array dalam bahasa pemrograman lain.Dengan memakai library dart : core memungkinkan pembuatan dan manipulasi tipe data ini melalui class List 
--	map : mewakili sekumpulan nilai sebagai pasangan key-value. Dengan memakai library dart : core memungkinkan pembuatan dan manipulasi tipe data ini melalui class List 
+### map : mewakili sekumpulan nilai sebagai pasangan key-value. Dengan memakai library dart : core memungkinkan pembuatan dan manipulasi tipe data ini melalui class List 
 
   
 # Null & Nullabel Types
