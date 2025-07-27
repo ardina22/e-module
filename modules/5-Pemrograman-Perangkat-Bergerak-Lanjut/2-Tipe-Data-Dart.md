@@ -1,31 +1,34 @@
 # Tipe Data Dart
--	int (integer)	: bilangan bulat
-  ```dart
+
+###	int (integer)	: bilangan bulat
+```dart
    int usia = 17;
 ```
 
--	double 		: bilangan desimal
-  ```dart
-  > double tinggiBadan = 182.5;
+### double 		: bilangan desimal
+```dart
+  double tinggiBadan = 182.5;
 ```
 
--	num       : bisa menerima nilai int dan double
-  ```dart
-  num tinggiBadan = 182.5;
+### num       : bisa menerima nilai int dan double
+```dart
+num tinggiBadan = 182.5;
 num usia = 17;
 ```
 
--	string		: berisi kumpulan karakter dengan diapit petik dua atau petik satu.
-  ```dart
+### string		: berisi kumpulan karakter dengan diapit petik dua atau petik satu.
+```dart
 String nama = "Roni Saputra, ";
 String kelas = 'XII RPL';
 ```
-Menggabungkan 2 buah string
+- Menggabungkan 2 buah string
+  
 ```dart
 var data = nama + kelas;
   print(data);
 ```
-String Interpolation --> expression (memanggil variabel ke dalam string)
+
+- String Interpolation --> expression (memanggil variabel ke dalam string)
 ```dart
   String data = "$nama ${kelas}";
   print(data);
