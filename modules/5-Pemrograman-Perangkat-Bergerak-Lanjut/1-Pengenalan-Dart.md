@@ -1,7 +1,7 @@
 # Bahasa Pemrograman Dart
 Dart merupakan bahasa pemrograman yang dibuat oleh Google (2011)  yang bersifat cross-platform. Dart digunakan untuk mengembangkan aplikasi berbasis web dan mobile. Kalian dapat menggunakan framework Flutter untuk mengembangkan aplikasi mobile yang dapat dijalankan pada perangkat Android maupun iOS. 
 
-Berikut ini syntax dasar Dart untuk menampilkan teks "Hai, Santri" pada layar
+Berikut ini syntax dasar Dart untuk menampilkan teks "Hello World" pada layar
 
 ## Script Utama Dart
 ```dart
