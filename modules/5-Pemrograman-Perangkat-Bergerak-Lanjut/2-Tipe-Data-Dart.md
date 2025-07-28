@@ -120,3 +120,4 @@ void main() {
 #Assignment
 1. Buatlah nilai dari variabel nama dan kelas digabung menjadi satu, serta ketika ditampilkan nilai dari variabel kelas mengandung huruf kecil semua tanpa mengubah inisialisai nilai awal.
    OUTPUT : Roni Saputra, xii rpl
+2. 
