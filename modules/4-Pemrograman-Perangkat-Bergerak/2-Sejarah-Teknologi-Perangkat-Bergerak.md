@@ -19,4 +19,7 @@ G berarti Generation dan berhubungan dengan kecepatan transmisi data
 - GSM mendukung komunikasi data berkecepatan 14.4 Kbps (hanya cukup untuk melayani SMS, download gambar,atau ringtone MIDI saja)
 
   ## Second and half a generation (2.5G)
+  -Teknologi TDMA diimplementasikan dalam General Packet Radio Service (GPRS) dan WiDEN
+  -Layanan tersedia lebih banyak seperti komunikasi suara,SMS, voice mail, call waiting, dan transfer data dengan kecepatan maksimal 9600 bps
+  
   
