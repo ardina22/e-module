@@ -117,6 +117,20 @@ void main() {
 }
 ```
 
+# Input Output 
+Selain menggunakan fungsi print()  untuk menampilkan output ke dalam console, kita juga dapat menggunakan fungsi stdout.write().  Fungsi ini berada di dalam library dart:io. Jadi untuk menggunakan fungsi stdout.write(), kita harus mengimportnya terlebih dahulu. 
+```dart
+import 'dart:io';
+void main() {
+  stdout.write("Nama Anda:");
+  var nama = stdin.readLineSync();
+}
+```
+keteranga:
+- Libray dart:io adalah libray yang berisi fungsi-fungsi, konstanta, class, dan objek untuk melakukan operasi input dan output
+- Fungsi write() digunakan untuk menampilkan teks ke console
+- readLineSync() adalah fungsi untuk membaca input dari keyboard. Fungsi ini akan mengembalikan nilai berupa String. 
+
 #Assignment
 1. Buatlah nilai dari variabel nama dan kelas digabung menjadi satu, serta ketika ditampilkan nilai dari variabel kelas mengandung huruf kecil semua tanpa mengubah inisialisai nilai awal.
    OUTPUT : Roni Saputra, xii rpl
