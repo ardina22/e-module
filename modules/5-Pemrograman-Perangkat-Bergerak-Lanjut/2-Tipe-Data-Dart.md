@@ -120,4 +120,19 @@ void main() {
 #Assignment
 1. Buatlah nilai dari variabel nama dan kelas digabung menjadi satu, serta ketika ditampilkan nilai dari variabel kelas mengandung huruf kecil semua tanpa mengubah inisialisai nilai awal.
    OUTPUT : Roni Saputra, xii rpl
-2. 
+
+```dart
+Masukkan nama: Ardi
+Masukkan umur: 17
+Masukkan tinggi badan: 168.5
+Apakah kamu seorang pelajar? (true/false): true
+Masukkan hobi kamu: Membaca
+
+--- Data DIri Anda:  ---
+Nama: Ardi
+Umur: 17
+Tinggi badan: 168.5
+Status pelajar: true
+Hobi: Membaca
+
+```
