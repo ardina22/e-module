@@ -13,7 +13,8 @@ Fungsi main() adalah function yang telah ditetapkan di Dart. Function ini bertin
 
 # Memulai Pemrograman Dart
 1. Download Visual Studio Code
-2. Download Dart SDK atau Flutter SDK
+2. Download Dart SDK atau [flutter SDK][link flutter]
+2.  [link flutter]: [https://flutter.dev/](https://docs.flutter.dev/get-started/install/windows/mobile)
 > Why FLutter SDK ? Karena kedapannya kita akan menggunakan Flutter, FLutter SDK didalamnya sudah ada Dart SDK sekaligus sehingga tidak perlu mengistall SDK Dart secara terpisah.
 4. Buka extentions `ctrl+shift+x`  kemudian cari Flutter lalu instal
 5. Buka command pallete atau `ctrl+shift+p` lalu cari / ketikan `Dart: New Project` kemudian enter dam tunggu beberapa saat
