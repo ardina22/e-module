@@ -19,7 +19,7 @@ Fungsi main() adalah function yang telah ditetapkan di Dart. Function ini bertin
 5. Cari folder bin dan copy link tempat penyimpanan folder bin tersebut
 6. Update PATH pada Environment Variabel dengan menambahkan link yang telah Anda copy sebelumnya kemudian simpan
 7. Cek apakah path di environment vatiabel sudah dikenali dari comment prompt dengan mengetikkan `Flutter`
-9. Menyambungkan VS Code dan Flutter dengan Buka extentions `ctrl+shift+x`  kemudian cari Flutter lalu instal
+9. Menyambungkan VS Code dan Flutter dengan Buka extentions `ctrl+shift+x`  kemudian cari Dart lalu instal
 10. Buka command pallete atau `ctrl+shift+p` lalu cari / ketikan `Dart: New Project` kemudian enter dam tunggu beberapa saat
 11. Setelah itu pilih template dart `Console Application` 
 12. Lalu buat folder baru dan beri nama "pemrograman_dart"
