@@ -131,7 +131,14 @@ keteranga:
 - Fungsi write() digunakan untuk menampilkan teks ke console
 - readLineSync() adalah fungsi untuk membaca input dari keyboard. Fungsi ini akan mengembalikan nilai berupa String. 
 
-#Assignment
+```dart
+stdout.write('Masukkan umur: ');
+int umur = int.parse(stdin.readLineSync()!);
+```
+keterangan:
+- `int parse` akan mengubah string '17' yang akan diinputkan oleh user menjadi angka 17 (tipe data int)
+
+# Assignment
 1. Buatlah nilai dari variabel nama dan kelas digabung menjadi satu, serta ketika ditampilkan nilai dari variabel kelas mengandung huruf kecil semua tanpa mengubah inisialisai nilai awal.
    OUTPUT : Roni Saputra, xii rpl
 
