@@ -137,6 +137,10 @@ int umur = int.parse(stdin.readLineSync()!);
 ```
 keterangan:
 - `int parse` akan mengubah string '17' yang akan diinputkan oleh user menjadi angka 17 (tipe data int)
+- Tambahkan kode di bawah ini untuk membuktikan bahwa string tersebut sudah terkonversi menjadi nilai integer dengan menambahkan umur anda dengan 6. Apakah bertambah?
+```dart
+print(umur + 6)
+```
 
 # Assignment
 1. Buatlah nilai dari variabel nama dan kelas digabung menjadi satu, serta ketika ditampilkan nilai dari variabel kelas mengandung huruf kecil semua tanpa mengubah inisialisai nilai awal.
