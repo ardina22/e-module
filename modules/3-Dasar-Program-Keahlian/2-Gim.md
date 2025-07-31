@@ -11,4 +11,19 @@ contoh game console modern :
 - Playstation buatan Sony
 - Xbox buatan Micrsoft
 
+## Handheld Games (Konsol Game Permainan)
+merupkan sebuah konsol permainan video portabel kecil dengan layar built-in, kontrol permainan, dam pemutar suara yang dapat dibawa dan dimainkan disetiap waktu dan tempat
+komponen :
+- konsol
+- layar
+- pemutar suara
+- pengkontrol
+dimana keempat komponen tersebut tergabung dalam satu unit
+contoh : Sony PSP dan Nintendo DS
+
+# PC Games
+merupakan permainan video yang dimainkan pada komputer pribadi atau PC Dekstop hingga laptop, dan bukan pada konsol permainan maupun mesin arkade 
+
+# Mobile Game 
+
 # Dampak Gim
