@@ -37,14 +37,12 @@ const childForm = reactive({
 })
 
 /* ───── Computed ───── */
-const isRootModule = computed(() =>
-  localModule.value.file && localRoot.value.find((m) => m.file === localModule.value.file)
+const isRootModule = computed(
+  () => localModule.value.file && localRoot.value.find((m) => m.file === localModule.value.file),
 )
 
 const parentClass = computed(() =>
-  localModule.value.children || isRootModule.value
-    ? 'rounded-lg'
-    : 'pl-6 last:rounded-b-lg'
+  localModule.value.children || isRootModule.value ? 'rounded-lg' : 'pl-6 last:rounded-b-lg',
 )
 
 /* ───── Methods ───── */
@@ -95,7 +93,7 @@ const requestRemove = () => {
   const ok = confirm(
     isFolder
       ? `Remove folder "${localModule.value.label}" and all of its children?`
-      : `Remove "${localModule.value.label}"?`
+      : `Remove "${localModule.value.label}"?`,
   )
   if (ok) emit('request-remove', localModule.value)
 }
@@ -111,15 +109,8 @@ const requestRemove = () => {
       <Bars3Icon class="w-4 h-4 text-gray-400" />
 
       <!-- Expand/collapse -->
-      <button
-        v-if="module.children"
-        @click="toggle"
-        class="text-gray-500 hover:text-gray-700"
-      >
-        <component
-          :is="expanded ? ChevronDownIcon : ChevronRightIcon"
-          class="w-4 h-4"
-        />
+      <button v-if="module.children" @click="toggle" class="text-gray-500 hover:text-gray-700">
+        <component :is="expanded ? ChevronDownIcon : ChevronRightIcon" class="w-4 h-4" />
       </button>
 
       <!-- Icon -->
@@ -145,21 +136,14 @@ const requestRemove = () => {
           <PlusCircleIcon class="w-5 h-5" />
         </button>
 
-        <button
-          @click="requestRemove"
-          class="text-red-600 hover:text-red-700"
-          title="Remove"
-        >
+        <button @click="requestRemove" class="text-red-600 hover:text-red-700" title="Remove">
           <TrashIcon class="w-5 h-5" />
         </button>
       </div>
     </div>
 
     <!-- Add Child Form -->
-    <div
-      v-if="adding"
-      class="ml-7 mr-2 mb-3 border-l border-gray-200 pl-3 space-y-2"
-    >
+    <div v-if="adding" class="ml-7 mr-2 mb-3 border-l border-gray-200 pl-3 space-y-2">
       <input
         v-model="childForm.label"
         placeholder="Child title"
@@ -167,11 +151,7 @@ const requestRemove = () => {
       />
 
       <label class="inline-flex items-center gap-2 text-sm">
-        <input
-          type="checkbox"
-          v-model="childForm.isFile"
-          class="form-checkbox text-blue-600"
-        />
+        <input type="checkbox" v-model="childForm.isFile" class="form-checkbox text-blue-600" />
         <span>Is file</span>
       </label>
 
@@ -189,10 +169,7 @@ const requestRemove = () => {
         >
           Add
         </button>
-        <button
-          @click="cancelAdd"
-          class="px-3 py-1 text-sm text-gray-600 hover:text-black"
-        >
+        <button @click="cancelAdd" class="px-3 py-1 text-sm text-gray-600 hover:text-black">
           Cancel
         </button>
       </div>
