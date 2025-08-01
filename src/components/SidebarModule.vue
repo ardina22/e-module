@@ -59,7 +59,7 @@ const emit = defineEmits<Emits>()
     <div v-if="!isProd" class="px-4 py-3 border-t border-gray-200 flex justify-center">
       <button
         @click="emit('add-module')"
-        class="w-full flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-2.5 text-white font-semibold shadow-md hover:from-blue-700 hover:to-purple-700 transition duration-200"
+        class="w-full flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-2.5 text-white font-semibold shadow-md hover:from-blue-700 hover:to-purple-700 transition duration-200 cursor-pointer"
       >
         <RectangleStackIcon class="w-5 h-5" />
         <span>Manajemen Module</span>
