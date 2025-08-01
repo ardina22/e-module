@@ -41,5 +41,11 @@ contoh:
 ### Action Game
 merupakan game yang menampilkan unsur aksi dan laga yang berkaitan dengan tembak-tembakan, saling-serang, dan aksi perang mengahadapi musuh
 contoh:
+### Platform Game
+Platform game atau disebut juga jump and run games merupakan sub genre dari action game. Dalam game ini pemain akan menggerakkan karakter dari satu tiitk ke titik lainny melewati rintangan-rintangan yang ada disekitarnya 
+contoh:
+### Simulation Game
+merupakan game yang menghadirkan simulasi aktivitas di dunia nyata. 
+contoh: 
 
 # Dampak Gim
