@@ -48,8 +48,11 @@ contoh:
 merupakan game yang menghadirkan simulasi aktivitas di dunia nyata. 
 contoh: 
 ### Sport Game
+cmotoh:
 ### Shooting Game
+contoh:
 ### Role-Playing Game
+contoh:
 
 
 # Dampak Gim
