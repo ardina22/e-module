@@ -1,8 +1,10 @@
 <script setup lang="ts">
-defineProps<{
-  headings: { id: string; text: string; level: number }[]
+type Props = {
+  headings: Array<{ id: string; text: string; level: number }>
   activeId: string | null
-}>()
+}
+
+defineProps<Props>()
 </script>
 
 <template>
