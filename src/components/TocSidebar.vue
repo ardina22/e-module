@@ -1,6 +1,6 @@
 <script setup lang="ts">
 type Props = {
-  headings: Array<{ id: string; text: string; level: number }>
+  headings: Array<{ id: string; text: string; content: string; level: number }>
   activeId: string | null
 }
 
@@ -31,8 +31,8 @@ defineProps<Props>()
               'bg-blue-50 text-blue-600 font-medium': activeId === heading.id,
               'hover:bg-blue-50 hover:text-blue-600': activeId !== heading.id,
             }"
+            v-html="heading.content"
           >
-            {{ heading.text }}
           </a>
         </li>
       </ul>

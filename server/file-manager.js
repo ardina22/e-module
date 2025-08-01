@@ -125,12 +125,10 @@ export default class FileManager {
    * @param {boolean} [opts.prune=true]
    * @param {boolean} [opts.dryRun=false]
    */
-  async syncFromTree(tree, {
-    createIfMissing = true,
-    fileContent = '',
-    prune = true,
-    dryRun = false
-  } = {}) {
+  async syncFromTree(
+    tree,
+    { createIfMissing = true, fileContent = '', prune = true, dryRun = false } = {},
+  ) {
     this.indexEntries = []
     await this.ensureDir(this.baseDir)
     await this._reorderTree(tree, { createIfMissing, fileContent })
@@ -164,7 +162,7 @@ export default class FileManager {
         }
 
         if (node.children && node.children.length) {
-          const folder = prefix.join('-')   // or just prefix[prefix.length-1]
+          const folder = prefix.join('-') // or just prefix[prefix.length-1]
           dirs.add(folder)
 
           node.children.forEach((child, ci) => {
@@ -224,10 +222,10 @@ export default class FileManager {
     const onDisk = await this.scanDisk()
 
     // Orphan files
-    const orphanFiles = onDisk.files.filter(f => !planned.files.has(f))
+    const orphanFiles = onDisk.files.filter((f) => !planned.files.has(f))
     // Orphan dirs (delete deepest first)
     const orphanDirs = onDisk.dirs
-      .filter(d => !planned.dirs.has(d))
+      .filter((d) => !planned.dirs.has(d))
       .sort((a, b) => b.length - a.length)
 
     if (orphanFiles.length === 0 && orphanDirs.length === 0) {
@@ -267,6 +265,42 @@ export default class FileManager {
   }
 
   /**
+   * Updates the content of a specified file in the `public/modules` directory.
+   *
+   * This function reads the `index.json` file to verify that the provided entry
+   * is a valid file listed in the index. It then resolves the path securely and
+   * writes the new content to the file.
+   *
+   * @param entry - The relative file path (e.g., `foo/bar.md`) to update.
+   *                Must be listed in `public/modules/index.json`.
+   * @param content - The new content to write into the file.
+   *
+   * @throws Will throw an error if:
+   * - The entry is not listed in `index.json`.
+   * - The resolved path attempts path traversal outside of `baseDir`.
+   * - File operations fail (e.g., missing file, permissions).
+   *
+   * @returns A promise that resolves once the file has been successfully updated.
+   */
+  async updateContent(entry, content) {
+    const indexPath = path.join(this.baseDir, 'index.json')
+    const indexRaw = await fs.readFile(indexPath, 'utf-8')
+    const index = JSON.parse(indexRaw)
+
+    if (!index.includes(entry)) {
+      throw new Error(`Entry "${entry}" not found in index.json`)
+    }
+
+    const filePath = path.resolve(this.baseDir, entry)
+
+    if (!filePath.startsWith(this.baseDir)) {
+      throw new Error('Invalid path (path traversal detected)')
+    }
+
+    await fs.writeFile(filePath, content, 'utf-8')
+  }
+
+  /**
    * Internal recursive reorder/create.
    *
    * @param {ModuleTree[]} tree
@@ -285,8 +319,7 @@ export default class FileManager {
         const newFilename = `${indexPrefix}${slugLabel}.md`
         const newPath = path.join(this.baseDir, newFilename)
 
-        const content =
-          typeof fileContent === 'function' ? fileContent(node) : fileContent
+        const content = typeof fileContent === 'function' ? fileContent(node) : fileContent
 
         await this.moveOrCreateFile(oldPath, newPath, {
           createIfMissing,
@@ -298,7 +331,7 @@ export default class FileManager {
 
       // Folder with children
       if (node.children && node.children.length > 0) {
-        const oldFolderFromFile = node.children.find(c => c.file)?.file?.split('/')?.[0]
+        const oldFolderFromFile = node.children.find((c) => c.file)?.file?.split('/')?.[0]
         const oldFolderName = oldFolderFromFile ?? ''
         const newFolderName = `${indexPrefix}${slugLabel}`
         const oldFolderPath = oldFolderName ? path.join(this.baseDir, oldFolderName) : null
@@ -334,8 +367,7 @@ export default class FileManager {
             ? path.resolve(this.baseDir, child.file)
             : path.join(newFolderPath, newChildName)
 
-          const content =
-            typeof fileContent === 'function' ? fileContent(child) : fileContent
+          const content = typeof fileContent === 'function' ? fileContent(child) : fileContent
 
           await this.moveOrCreateFile(oldChildPath, newChildPath, {
             createIfMissing,

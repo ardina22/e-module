@@ -15,7 +15,8 @@ export async function renderMarkdown(markdown: string): Promise<string> {
 
   renderer.heading = ({ text, depth, raw }) => {
     const id = StringUtils.slugify(raw)
-    return `<h${depth} id="${id}" class="scroll-mt-24">${text}</h${depth}>`
+    const html = marked.parseInline(text)
+    return `<h${depth} id="${id}" class="scroll-mt-24">${html}</h${depth}>`
   }
 
   renderer.codespan = ({ text }) => {

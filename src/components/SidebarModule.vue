@@ -5,6 +5,7 @@ import type { ModuleTree } from '@/module-tree'
 
 type Props = {
   open: boolean
+  isProd: boolean
   moduleTrees: ModuleTree[]
   currentFile?: string
 }
@@ -29,7 +30,13 @@ const emit = defineEmits<Emits>()
     ]"
   >
     <!-- Scrollable content area -->
-    <div class="h-[calc(100%-4rem)] overflow-y-auto p-4">
+    <div
+      class="overflow-y-auto p-4"
+      :class="{
+        'h-[calc(100%-4rem)]': !isProd,
+        'h-full': isProd,
+      }"
+    >
       <div class="flex justify-between items-center mb-4">
         <h2 class="text-2xl font-bold">📚 E-Module</h2>
         <XMarkIcon @click="emit('close')" class="lg:hidden w-6 h-6 text-gray-700" />
@@ -49,7 +56,7 @@ const emit = defineEmits<Emits>()
     </div>
 
     <!-- Fixed bottom button -->
-    <div class="px-4 py-3 border-t border-gray-200 flex justify-center">
+    <div v-if="!isProd" class="px-4 py-3 border-t border-gray-200 flex justify-center">
       <button
         @click="emit('add-module')"
         class="w-full flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-2.5 text-white font-semibold shadow-md hover:from-blue-700 hover:to-purple-700 transition duration-200"

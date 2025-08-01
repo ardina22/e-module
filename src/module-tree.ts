@@ -14,6 +14,7 @@ interface InternalModuleTree extends ModuleTree {
 export interface MarkdownHeading {
   id: string
   text: string
+  content: string
   level: number
 }
 
@@ -168,10 +169,11 @@ export function extractHeadingsFromHTML(html: string): MarkdownHeading[] {
   container.querySelectorAll('h1, h2, h3').forEach((el) => {
     const level = parseInt(el.tagName.substring(1))
     const text = el.textContent?.trim() || ''
+    const content = el.innerHTML?.trim() || ''
     const id = StringUtils.slugify(text)
 
     el.id = id
-    headings.push({ id, text, level })
+    headings.push({ id, text, content, level })
   })
 
   return headings
