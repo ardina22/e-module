@@ -1,8 +1,10 @@
 <script setup lang="ts">
-defineProps<{
-  headings: { id: string; text: string; level: number }[]
+type Props = {
+  headings: Array<{ id: string; text: string; content: string; level: number }>
   activeId: string | null
-}>()
+}
+
+defineProps<Props>()
 </script>
 
 <template>
@@ -29,8 +31,8 @@ defineProps<{
               'bg-blue-50 text-blue-600 font-medium': activeId === heading.id,
               'hover:bg-blue-50 hover:text-blue-600': activeId !== heading.id,
             }"
+            v-html="heading.content"
           >
-            {{ heading.text }}
           </a>
         </li>
       </ul>
