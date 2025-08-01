@@ -1,7 +1,10 @@
 # Sejarah Teknologi Gim
+--> Sudah dipelajari di Buku LKS
+
+
 # Klasifikasi Gim
 ## Klasifikasi Gim Berdasarkan Platform
-Platform merupkan perangkat game 
+Apa itu Platform?
 ### Console Games
 merupan mesin elektronik yang dirancang khusus untuk memainkan permainan video 
 - komputer / televisi : sebagai perangkat penampil grafik 
@@ -26,5 +29,17 @@ merupakan permainan video yang dimainkan pada komputer pribadi atau PC Dekstop h
 
 ### Mobile Game 
 merupkan permainan video yang dimainkan pada peranti bergerak diantaranya seperti telepon pintar, arloji pintar, komputer tablet, dll.
+
+## Klasifikasi Gim Berdasarkan Genre
+Apa itu Genre?
+### Maze Game
+Permainan maze (labirin) merupakan permainan sederhana yang berrtujuan menentukan jalur yang tepat dari beberapa jalur bercabang dan berliku untuk sampai ke tujuan.
+contoh: 
+### Puzzle Game
+merupakan game yang mengajak pemainnya memecahkan teka-teki
+contoh:
+### Action Game
+merupakan game yang menampilkan unsur aksi dan laga yang berkaitan dengan tembak-tembakan, saling-serang, dan aksi perang mengahadapi musuh
+contoh:
 
 # Dampak Gim
