@@ -47,5 +47,9 @@ contoh:
 ### Simulation Game
 merupakan game yang menghadirkan simulasi aktivitas di dunia nyata. 
 contoh: 
+### Sport Game
+### Shooting Game
+### Role-Playing Game
+
 
 # Dampak Gim
