@@ -60,7 +60,7 @@ app.post('/api/modules/structure/update', async (req, res) => {
       dryRun: false,
     })
 
-    res.json({ success: true, data: moduleTree, error: null })
+    res.status(200).json({ success: true, data: moduleTree, error: null })
   } catch (error) {
     res.status(500).json({ success: false, data: null, error: error.message })
   }

@@ -245,6 +245,8 @@ onMounted(async () => {
   const firstFile = paths[0]
   currentFile.value = firstFile
 
+  console.log(moduleTrees.value)
+
   if (firstFile) {
     const filePath = `${import.meta.env.BASE_URL}modules/${firstFile}`
     const res = await fetch(filePath)

@@ -86,8 +86,7 @@ export const createModuleTrees = (paths: string[]): ModuleTree[] => {
   const root: InternalModuleTree = { label: 'root', _raw: 'root', children: [] }
 
   for (const fullPath of paths) {
-    const relativePath = fullPath.replace(/^modules\//, '')
-    const pathParts = relativePath.split('/')
+    const pathParts = fullPath.split('/')
     const fileName = pathParts.pop()!
 
     let currentNode = root
@@ -112,7 +111,7 @@ export const createModuleTrees = (paths: string[]): ModuleTree[] => {
     currentNode.children ??= []
     currentNode.children.push({
       label: formatLabel(fileName),
-      file: fullPath,
+      ...(fullPath.endsWith('.md') ? { file: fullPath } : { children: [] }),
       _raw: fileName,
     })
   }
