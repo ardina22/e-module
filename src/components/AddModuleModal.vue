@@ -98,7 +98,7 @@ const addModule = () => {
         <form @submit.prevent="addModule" class="space-y-5">
           <!-- Title -->
           <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1">📘 Module Title</label>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">📘 Judul Module</label>
             <div class="relative">
               <input
                 v-model="form.label"
@@ -120,7 +120,9 @@ const addModule = () => {
               v-model="form.isFile"
               class="form-checkbox text-blue-600 border-gray-300 focus:ring-2 focus:ring-blue-400"
             />
-            <label class="text-sm font-medium text-gray-700"> This is a file (has content) </label>
+            <label class="text-sm font-medium text-gray-700">
+              Ini adalah file (terdapat kontent)
+            </label>
           </div>
 
           <!-- Parent selector -->
@@ -130,7 +132,7 @@ const addModule = () => {
               v-model="selectedParent"
               class="w-full px-4 py-2.5 rounded-lg border border-gray-300 shadow-sm text-sm focus:ring-2 focus:ring-blue-200 focus:outline-none"
             >
-              <option :value="null">— Add to root —</option>
+              <option :value="null">— Tambah ke root —</option>
               <option v-for="parent in allParents" :key="parent.label" :value="parent">
                 {{ parent.label }}
               </option>
@@ -144,7 +146,7 @@ const addModule = () => {
               class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2.5 rounded-lg font-semibold shadow-md hover:from-blue-700 hover:to-purple-700 transition"
             >
               <PlusIcon class="w-5 h-5" />
-              Add Module
+              Tambah Module
             </button>
           </div>
         </form>
