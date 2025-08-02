@@ -312,69 +312,63 @@ export default class FileManager {
       const node = tree[i]
       const indexPrefix = `${i + 1}-`
       const slugLabel = this.toSlug(node.label)
+      const newFolderName = `${indexPrefix}${slugLabel}`
+      const newFolderPath = path.join(this.baseDir, newFolderName)
 
-      // Top-level file
+      const content = typeof fileContent === 'function' ? fileContent(node) : fileContent
+
+      // 📁 Case 1: This is a file module (has file and no children)
       if (node.file && !node.children?.length) {
         const oldPath = path.resolve(this.baseDir, node.file)
-        const newFilename = `${indexPrefix}${slugLabel}.md`
-        const newPath = path.join(this.baseDir, newFilename)
+        const newFilePath = path.join(this.baseDir, `${newFolderName}.md`)
 
-        const content = typeof fileContent === 'function' ? fileContent(node) : fileContent
-
-        await this.moveOrCreateFile(oldPath, newPath, {
+        await this.moveOrCreateFile(oldPath, newFilePath, {
           createIfMissing,
           content,
         })
 
-        this.addIndexEntry(newFilename)
+        this.addIndexEntry(`${newFolderName}.md`)
+
+        // 👇 Also create its folder so it can hold assets or future children
+        if (createIfMissing) {
+          await this.ensureDir(newFolderPath)
+          this.addIndexEntry(newFolderName)
+        }
+
+        continue
       }
 
-      // Folder with children
+      // 📁 Case 2: This is a folder with children
       if (node.children && node.children.length > 0) {
-        const oldFolderFromFile = node.children.find((c) => c.file)?.file?.split('/')?.[0]
-        const oldFolderName = oldFolderFromFile ?? ''
-        const newFolderName = `${indexPrefix}${slugLabel}`
-        const oldFolderPath = oldFolderName ? path.join(this.baseDir, oldFolderName) : null
-        const newFolderPath = path.join(this.baseDir, newFolderName)
-
-        if (oldFolderPath && (await this.pathExists(oldFolderPath))) {
-          if (oldFolderName !== newFolderName) {
-            try {
-              await fs.rename(oldFolderPath, newFolderPath)
-              console.log(`✔ Renamed folder: ${oldFolderName} → ${newFolderName}`)
-            } catch (err) {
-              console.warn(`⚠ Could not rename folder: ${err.message}`)
-              await this.ensureDir(newFolderPath)
-            }
-          }
-        } else {
-          if (createIfMissing) {
-            await this.ensureDir(newFolderPath)
-            console.log(`✔ Created folder: ${newFolderName}`)
-          } else {
-            console.warn(`⚠ Folder missing and createIfMissing=false: ${newFolderName}`)
-          }
-        }
+        await this.ensureDir(newFolderPath)
 
         for (let j = 0; j < node.children.length; j++) {
           const child = node.children[j]
           const childSlug = this.toSlug(child.label)
-          const childIndex = `${j + 1}-`
-          const newChildName = `${childIndex}${childSlug}.md`
-          const newChildPath = path.join(newFolderPath, newChildName)
+          const childFileName = `${j + 1}-${childSlug}.md`
+          const childFilePath = path.join(newFolderPath, childFileName)
 
-          const oldChildPath = child.file
-            ? path.resolve(this.baseDir, child.file)
-            : path.join(newFolderPath, newChildName)
+          const oldChildPath = child.file ? path.resolve(this.baseDir, child.file) : childFilePath
 
-          const content = typeof fileContent === 'function' ? fileContent(child) : fileContent
+          const childContent = typeof fileContent === 'function' ? fileContent(child) : fileContent
 
-          await this.moveOrCreateFile(oldChildPath, newChildPath, {
+          await this.moveOrCreateFile(oldChildPath, childFilePath, {
             createIfMissing,
-            content,
+            content: childContent,
           })
 
-          this.addIndexEntry(path.join(newFolderName, newChildName))
+          this.addIndexEntry(path.join(newFolderName, childFileName))
+        }
+
+        continue
+      }
+
+      // 📁 Case 3: Empty folder module (no file, no children)
+      if (!node.file && (!node.children || node.children.length === 0)) {
+        if (createIfMissing) {
+          await this.ensureDir(newFolderPath)
+          console.log(`✔ Created empty module folder: ${newFolderName}`)
+          this.addIndexEntry(newFolderName)
         }
       }
     }
