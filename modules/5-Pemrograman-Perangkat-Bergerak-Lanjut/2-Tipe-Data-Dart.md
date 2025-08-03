@@ -130,14 +130,14 @@ keteranga:
 - Libray dart:io adalah libray yang berisi fungsi-fungsi, konstanta, class, dan objek untuk melakukan operasi input dan output
 - Fungsi write() digunakan untuk menampilkan teks ke console
 - readLineSync() adalah fungsi untuk membaca input dari keyboard. Fungsi ini akan mengembalikan nilai berupa String.
-`Fungsi untuk mengembalikan nilai berupa integer apa?`
-
+- Fungsi untuk mengembalikan nilai berupa integer apa?
+  
 ```dart
 stdout.write('Masukkan umur: ');
 int umur = int.parse(stdin.readLineSync()!);
 ```
 keterangan:
-- `int parse` akan mengubah string '17' yang akan diinputkan oleh user menjadi angka 17 (tipe data int)
+- `int parse` akan mengonversi nilai String menjadi bilangan bulat (integer)
 - Tambahkan kode di bawah ini untuk membuktikan bahwa string tersebut sudah terkonversi menjadi nilai integer dengan menambahkan umur anda dengan 6. Apakah bertambah?
 ```dart
 print(umur + 6)
@@ -156,8 +156,8 @@ Masukkan hobi kamu: Membaca
 
 --- Data DIri Anda:  ---
 Nama: Ardi
-Umur: 17
-Tinggi badan: 168.5
+Umur: 17 Tahun
+Tinggi badan: 168.5 cm
 Status pelajar: true
 Hobi: Membaca
 
