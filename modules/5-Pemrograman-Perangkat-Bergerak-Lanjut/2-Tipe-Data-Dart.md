@@ -129,7 +129,8 @@ void main() {
 keteranga:
 - Libray dart:io adalah libray yang berisi fungsi-fungsi, konstanta, class, dan objek untuk melakukan operasi input dan output
 - Fungsi write() digunakan untuk menampilkan teks ke console
-- readLineSync() adalah fungsi untuk membaca input dari keyboard. Fungsi ini akan mengembalikan nilai berupa String. 
+- readLineSync() adalah fungsi untuk membaca input dari keyboard. Fungsi ini akan mengembalikan nilai berupa String.
+`Fungsi untuk mengembalikan nilai berupa integer apa?`
 
 ```dart
 stdout.write('Masukkan umur: ');
