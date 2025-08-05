@@ -12,7 +12,7 @@ Berikut ini adalah aturan penamaan untuk variabel :
 - Tidak boleh dimulai dengan angka.
 
 ## Penulisan Variabel 
-### Keyword Var
+### Keyword Var 
 Sebuah variabel harus dideklarasikan sebelum digunakan. Di dalam dart untuk membuat variabel bisa menggunakan berbagai macam deklarasi. 
  Salah satu caranya, Dart menggunakan keyword var untuk mendeklarasikan variabel. Cara penulisan untuk mendeklarasikan variabel adalah seperti yang dicontohkan di bawah ini :
 ```dart
@@ -78,6 +78,7 @@ void main() {
 
 ### Keyword Late 
 Late digunakan jika ingin membuat variabel yang dideklarasinya apabila nanti ketika variabel ingin diakses
+- variabel late baru akan di deklarasi ketika akan diakses
 Contoh penggunaan keyword Late:
 ```dart
 String tampilkanData() {
