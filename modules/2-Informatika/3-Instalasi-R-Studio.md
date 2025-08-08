@@ -18,9 +18,15 @@
    > Contoh : 9 + 12 , 8 - 2, 7/2 , 8 * 5
 
 
-## Tipe Data pada R 
+## PRAKTIK
+1. Melakukan deklarasi dan inisialisasi variabel
+   - variabel : entitas yang digunakan untuk menyimpan nilai
+   - deklarasi : tindakan memberi tahu kompiler bahwa Anda akan menggunakan variabel dengan nama dan tipe data tertentu
+   - inisialisasi :memberikan nilai awal ke variabel yang telah Anda deklarasikan
 ```R
-data <- 10
+nama <- "Roni Saputra"
+tinggiBadan <- 167
+kelasSepuluh <- TRUE
 ```
 
 
