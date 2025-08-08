@@ -12,7 +12,8 @@
 4. Kemudian buka R Studio
 5. Buatlah projek baru dengan langkah berikut
    > File --> New Project --> New Direktori --> New Project --> Tuliskankan Nama Folder Anda --> Create
-6.j
+   
+6. Buka lah Script R baru dengan menekan tombol
 
 
 
