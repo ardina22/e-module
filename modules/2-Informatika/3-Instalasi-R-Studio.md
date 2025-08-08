@@ -13,7 +13,9 @@
 5. Buatlah projek baru dengan langkah berikut
    > File --> New Project --> New Direktori --> New Project --> Tuliskankan Nama Folder Anda --> Create
    
-6. Buka lah Script R baru dengan menekan tombol
+6. Buka lah Script R baru dengan menekan tombol `CRTL + SHIFT + N`
+7. Coba mulai lah melakukan operasi aritmatika pada bagian consol
+   > Contoh : 9 + 12 , 8 - 2, 7/2 , 8 * 5
 
 
 
