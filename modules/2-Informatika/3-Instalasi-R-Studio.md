@@ -19,7 +19,7 @@
 
 
 ## PRAKTIK
-1. Melakukan deklarasi dan inisialisasi variabel
+### 1. Melakukan deklarasi dan inisialisasi variabel
    - variabel : entitas yang digunakan untuk menyimpan nilai
    - deklarasi : tindakan memberi tahu kompiler bahwa Anda akan menggunakan variabel dengan nama dan tipe data tertentu
    - inisialisasi :memberikan nilai awal ke variabel yang telah Anda deklarasikan
@@ -28,7 +28,7 @@ nama <- "Roni Saputra"
 tinggiBadan <- 167
 kelasSepuluh <- TRUE
 ```
-2. Mengecek tipe data pada  masing-masing variabel pada PRAKTIK 1
+### 2. Mengecek tipe data pada  masing-masing variabel pada PRAKTIK 1
    - Tipe Data : kategori data yang menentukan nilai apa saja yang dapat disimpan oleh sebuah variabel
 ```R
 class(nama)
