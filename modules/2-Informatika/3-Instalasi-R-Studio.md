@@ -28,6 +28,18 @@ nama <- "Roni Saputra"
 tinggiBadan <- 167
 kelasSepuluh <- TRUE
 ```
+2. Mengecek tipe data pada  masing-masing variabel pada PRAKTIK 1
+   - Tipe Data : kategori data yang menentukan nilai apa saja yang dapat disimpan oleh sebuah variabel
+```R
+class(nama)
+```
+```R
+class(tinggiBadan)
+```
+```R
+class(kelasSepuluh)
+```
+Apa yang dihasilkan? Jelaskan pada laporan Anda
 
 
 Tombol pintasan di R:
