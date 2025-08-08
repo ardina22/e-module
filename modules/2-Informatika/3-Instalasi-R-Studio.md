@@ -19,9 +19,9 @@
 
 
 ## Tipe Data pada R 
-`dart
-d
-`
+```R
+data <- 10
+```
 
 
 Tombol pintasan di R:
