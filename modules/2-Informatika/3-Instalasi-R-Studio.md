@@ -18,8 +18,11 @@
    > Contoh : 9 + 12 , 8 - 2, 7/2 , 8 * 5
 
 
+## Tipe Data pada R 
+`dart
+d
+`
 
-[Flutter SDK](https://docs.flutter.dev/get-started/install/windows/mobile)
 
 Tombol pintasan di R:
 - CTRL + L : untuk membersihkan consol
