@@ -1,4 +1,4 @@
-#Pengenalan R
+# Pengenalan R
 
 
 # Instalasi R Studio
@@ -40,6 +40,31 @@ class(tinggiBadan)
 class(kelasSepuluh)
 ```
 Apa yang dihasilkan? Jelaskan pada laporan Anda
+
+### 3. Buatlah vektor yang berisi nilai dari ujian Informatika 10 siswa,yaitu: 78, 85, 89, 78, 90, 70, 65, 88, 92, 74
+Vektor pada R digunakan sebagai wadah untuk menampung nilai dengan tipe data yang sama
+Berikut contoh mendeklarasikan vektor
+```R
+nilai.Informatika <- c(78, 85, 89, 78, 90, 70, 65, 88, 92, 74)
+```
+Berdasarkan vektor di atas tentukan :
+1. Tentukan nilai tengah (median)
+```R
+median(nilai.Informatika)
+```
+2. Nilai rata-rata
+```R
+mean(nilai.Informatika)
+```
+3. Nilai Terendah
+```R
+min(nilai.Informatika)
+```
+4. Nilai Tertinggi
+```R
+max(nilai.Informatika)
+```
+
 
 
 Tombol pintasan di R:
