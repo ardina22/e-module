@@ -159,6 +159,6 @@ Nama: Ardi
 Umur: 17 Tahun
 Tinggi badan: 168.5 cm
 Status pelajar: true
-Hobi: Membaca
+Hobi: [Membaca, Menulis, Menggambar]
 
 ```
