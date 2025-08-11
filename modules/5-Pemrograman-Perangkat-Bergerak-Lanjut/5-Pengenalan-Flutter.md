@@ -1,7 +1,9 @@
 # Pengenalan Flutter
 Flutter adalah sebuah framework open source yang digunakan untuk membangun aplikasi multi-platform dari satu codebase. Flutter dikembangkan oleh Google dan menggunakan bahasa pemrograman Dart.
 
-`Mengapa Flutter? `
+`Mengapa Flutter?
+Flutter memiliki kemampuan untuk Reload / Refresh halaman dengan cepat ketika ada perubahan pada program / codingan dengan hanya memakan waktu kurang dari 1 detik.Hal ini sangat berbanding terbalik ketika kita menggunakan Android studio yang memakan waktu building yang cukup lama.
+`
 
 ## Hot Reload dan Hot Restart
 Saat membangun aplikasi menggunakan Dart, pasti akan cukup lama untuk menjalankan eksekusinya pertama kali. Oleh karenanya, Flutter menyediakan dua fitur untuk menyelesaikan masalah ini, yaitu Hot Reload dan Hot Restart.
@@ -12,6 +14,8 @@ Hot reload merupakan fungsionalitas yang sangat berguna di Flutter. Hal ini meru
 
 ## Hot Restart
 Hot restart memerlukan waktu lebih lama dibandingkan dengan hot reload tetapi memerlukan waktu lebih sedikit dibandingkan dengan fungsi full restart.
+
+
 
  
 
