@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
           appBar: AppBar(
               backgroundColor: Colors.teal,
               leading: Icon(Icons.home),
-              title: Text('Aplikasi Flutter Petani Kode')
+              title: Text('Aplikasi Pertamaku')
           ),
         )
     );
