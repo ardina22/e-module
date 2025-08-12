@@ -44,10 +44,10 @@ class HomePage extends StatelessWidget {
 }
 ```
 KETERANGAN
--  Import
+-  Import:
    mengimpor library dan dependencies yang diperlukan untuk aplikasi, seperti material.dart untuk widget bawaan Flutter.
--  Fungsi Main
+-  Fungsi Main :
    titik masuk aplikasi, yang menjalankan widget pertama kali. Biasanya, ini memanggil runApp() untuk memulai aplikasi dengan widget tertentu.
--  Widget
+-  Widget :
   aplikasi Flutter dibangun dari widget, yang merupakan komponen utama untuk membangun antarmuka pengguna. Widget bisa berupa stateless atau stateful, tergantung pada apakah widget tersebut memiliki status yang berubah seiring waktu
 
