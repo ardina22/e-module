@@ -20,3 +20,26 @@ Kerjakan [Praktik 1][link prak]
 - 📄 pubspec.lock merupakan file yang berisi versi-versi library atau package. File ini dibuat oleh pub. Fungsinya untuk mengunci versi package.
 - 📄 pubspec.yaml merupakan file yang berisi informasi tentang project dan library yang dibutuhkan;
 - 📄 README.md merupakan file markdown yang berisi penjelasan tentang source code.
+
+# Struktur Dasar Kode Aplikasi
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(HomePage());
+}
+
+class HomePage extends StatelessWidget {
+  build(context) {
+    return MaterialApp(
+        home: Scaffold(
+          appBar: AppBar(
+              backgroundColor: Colors.teal,
+              leading: Icon(Icons.home),
+              title: Text('Aplikasi Flutter Petani Kode')
+          ),
+        )
+    );
+  }
+}
+```
